@@ -12,18 +12,20 @@ const YogaCard = ({asanname, imageSrc, to}) => {
                     <img src={imageSrc} width='100%' backgroundSize='cover' />
                 </Box>
                 <Box marginTop='3%' sx={{ boxShadow: '0px 4px 6px rgba(0,0,0,0.1)', borderRadius: '5px', borderTopLeftRadius: '0px', borderTopRightRadius: '0px' }}>
-                    <Box marginLeft='20%' marginRight='10%'>
+                    <Box marginLeft='10%' marginRight='10%'>
                         <Typography textAlign='center' sx={{ 
             whiteSpace: 'nowrap', 
             overflow: 'hidden', 
-            textOverflow: 'ellipsis' 
+            textOverflow: 'ellipsis' ,
+            paddingBottom: '10px'
         }} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }} fontSize='20px' color='black'>
                         {asanname}
                         </Typography>
                         <Typography textAlign='center' sx={{ 
             whiteSpace: 'nowrap', 
             overflow: 'hidden', 
-            textOverflow: 'ellipsis' 
+            textOverflow: 'ellipsis' ,
+            paddingBottom: '10px'
         }} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }} fontSize='9px' color='black'>
                         {asanname}
                         </Typography>

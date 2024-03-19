@@ -54,7 +54,7 @@ const Footer = () => {
                         <NavLink to='/shops-books' style={{ textDecoration: 'none', marginTop: '10%' }}>
                             <Typography fontSize='16px' color='white' fontWeight='100'>Books</Typography>
                         </NavLink>
-                        <NavLink to='/shops/spiritual-accessories' style={{ textDecoration: 'none', marginTop: '10%' }}>
+                        <NavLink to='/shops-spiritual' style={{ textDecoration: 'none', marginTop: '10%' }}>
                             <Typography fontSize='16px' color='white' fontWeight='100'>Spiritual accessories</Typography>
                         </NavLink>
                     </Box>
@@ -82,7 +82,7 @@ const Footer = () => {
                 <Grid item xs={1.6}>
                     <Typography fontSize='20px' fontWeight='bold' color='white' marginBottom='5%'>Quick Links</Typography>
                     <Box display='flex' flexDirection='column' alignItems='start'>
-                        <NavLink to='/about-us' style={{ textDecoration: 'none' }}>
+                        <NavLink to='/aboutus' style={{ textDecoration: 'none' }}>
                             <Typography fontSize='16px' color='white' fontWeight='100'>About Us</Typography>
                         </NavLink>
                         <NavLink to='/return-refund' style={{ textDecoration: 'none', marginTop: '10%' }}>
@@ -102,7 +102,7 @@ const Footer = () => {
                 <Grid item xs={1.6}>
                     <Typography fontSize='20px' fontWeight='bold' color='white' marginBottom='5%'>Lifestyle</Typography>
                     <Box display='flex' flexDirection='column' alignItems='start'>
-                        <NavLink to='/wellness/yoga' style={{ textDecoration: 'none' }}>
+                        <NavLink to='/yogamain' style={{ textDecoration: 'none' }}>
                             <Typography fontSize='16px' color='white' fontWeight='100'>Yoga</Typography>
                         </NavLink>
                         <NavLink to='/wellness/meditation' style={{ textDecoration: 'none', marginTop: '10%' }}>
@@ -145,28 +145,28 @@ const Footer = () => {
                         <NavLink to='/shops/rudraksha' style={{ textDecoration: 'none' }}>
                             <Typography fontSize='10px' fontWeight='100' color='white'>Rudraksha</Typography>
                         </NavLink>
-                        <NavLink to='/shops/puja-samagri' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-pujasamagri' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Puja Samagri</Typography>
                         </NavLink>
-                        <NavLink to='/shops/yoga-store' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-yoga' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Yoga Store</Typography>
                         </NavLink>
-                        <NavLink to='/shops/health-immunity' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-healthandimmunity' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Health & Immunity</Typography>
                         </NavLink>
-                        <NavLink to='/shops/food-for-fast' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-foodforfast' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Food for Fast</Typography>
                         </NavLink>
-                        <NavLink to='/shops/clothing' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-clothing' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Clothing</Typography>
                         </NavLink>
-                        <NavLink to='/shops/body-care' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-bodycare' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Body Care</Typography>
                         </NavLink>
-                        <NavLink to='/shops/books' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-books' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Books</Typography>
                         </NavLink>
-                        <NavLink to='/shops/spiritual-accessories' style={{ textDecoration: 'none', marginTop: '5%' }}>
+                        <NavLink to='/shops-spiritual' style={{ textDecoration: 'none', marginTop: '5%' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Spiritual accessories</Typography>
                         </NavLink>
                     </Box>
@@ -214,7 +214,7 @@ const Footer = () => {
                 <Grid item xs={5} marginTop='5%'>
                     <Typography fontSize='16px' fontWeight='bold' color='white' marginBottom='5%'>Lifestyle</Typography>
                     <Box display='flex' flexDirection='column' alignItems='start'>
-                        <NavLink to='/wellness/yoga' style={{ textDecoration: 'none' }}>
+                        <NavLink to='/yogamain' style={{ textDecoration: 'none' }}>
                             <Typography fontSize='10px' color='white' fontWeight='100'>Yoga</Typography>
                         </NavLink>
                         <NavLink to='/wellness/meditation' style={{ textDecoration: 'none', marginTop: '5%' }}>

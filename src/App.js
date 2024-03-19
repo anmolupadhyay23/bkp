@@ -49,6 +49,7 @@ import Healthandimmunity from './Components/Pages/Shop/ShopPages/Healthandimmuni
 import Yogamain from './Components/Pages/Yoga/yogamain';
 import Sirasana from './Components/Pages/Yoga/asanas/sirasana';
 import Sarvangasana from './Components/Pages/Yoga/asanas/sarvangasana';
+
 import Halasana from './Components/Pages/Yoga/asanas/halasana';
 import Shalabhasana from './Components/Pages/Yoga/asanas/shalabhasana';
 import Paschimottanasana from './Components/Pages/Yoga/asanas/paschimottanasana';
@@ -59,6 +60,16 @@ import Trikonasana from './Components/Pages/Yoga/asanas/trikonasana';
 import Ardhamatsyendrasana from './Components/Pages/Yoga/asanas/ardhamatsyendrasana';
 import Mayurasana from './Components/Pages/Yoga/asanas/mayurasana';
 import Padahasthasana from './Components/Pages/Yoga/asanas/padahasthasana';
+
+
+import Aboutus from './Components/Pages/AboutUs/aboutus';
+import MeditationMain from './Components/Pages/Meditation/meditationmain';
+import Mindfulness from './Components/Pages/Meditation/meditations/mindful';
+import Transcendental from './Components/Pages/Meditation/meditations/transcendental';
+import Mantra from './Components/Pages/Meditation/meditations/mantra';
+import Spiritualmeditation from './Components/Pages/Meditation/meditations/spiritual';
+import Visualization from './Components/Pages/Meditation/meditations/visualization';
+import Focused from './Components/Pages/Meditation/meditations/focused';
 
 
 
@@ -144,11 +155,17 @@ function App() {
 
 
         <Route path='/donationcomingsoon' element={<Donationcomingsoon/>} />
+        <Route path='/aboutus' element={<Aboutus/>} />
 
 
-
-
-        
+        {/* Meditation routes */}
+        <Route path='/meditation' element={<MeditationMain/>} />
+        <Route path='/meditation-mindfulness' element={<Mindfulness/>} />
+        <Route path='/meditation-transcendental' element={<Transcendental/>} />
+        <Route path='/meditation-mantra' element={<Mantra/>} />
+        <Route path='/meditation-spiritual' element={<Spiritualmeditation/>} />
+        <Route path='/meditation-visualization' element={<Visualization/>} />
+        <Route path='/meditation-focused' element={<Focused/>} />
 
         {/* Path not found */}
         <Route path='/*'  element={<PageNotFound />} />

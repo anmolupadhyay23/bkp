@@ -115,7 +115,7 @@ const NewNavbar = () => {
                                     Wellness Practice ⮟
                                     <Box className='nav-hover'>
                                         <NavLink to='/yogamain'>Yoga</NavLink>
-                                        <NavLink to='/wellness/meditation'>Meditation</NavLink>
+                                        <NavLink to='/meditation'>Meditation</NavLink>
                                     </Box>
                                 </Button>
                             </Box>
