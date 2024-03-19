@@ -112,7 +112,7 @@ const NewNavbar = () => {
                             </Box>
                             <Box position='relative' display='inline-block'>
                                 <Button variant='text' className='nav-btn'>
-                                    Wellness Practice ⮟
+                                <NavLink to='/wellness-practice' className='nav-btn'>Wellness Practice ⮟</NavLink>
                                     <Box className='nav-hover'>
                                         <NavLink to='/yogamain'>Yoga</NavLink>
                                         <NavLink to='/meditation'>Meditation</NavLink>

@@ -49,7 +49,6 @@ import Healthandimmunity from './Components/Pages/Shop/ShopPages/Healthandimmuni
 import Yogamain from './Components/Pages/Yoga/yogamain';
 import Sirasana from './Components/Pages/Yoga/asanas/sirasana';
 import Sarvangasana from './Components/Pages/Yoga/asanas/sarvangasana';
-
 import Halasana from './Components/Pages/Yoga/asanas/halasana';
 import Shalabhasana from './Components/Pages/Yoga/asanas/shalabhasana';
 import Paschimottanasana from './Components/Pages/Yoga/asanas/paschimottanasana';
@@ -60,8 +59,6 @@ import Trikonasana from './Components/Pages/Yoga/asanas/trikonasana';
 import Ardhamatsyendrasana from './Components/Pages/Yoga/asanas/ardhamatsyendrasana';
 import Mayurasana from './Components/Pages/Yoga/asanas/mayurasana';
 import Padahasthasana from './Components/Pages/Yoga/asanas/padahasthasana';
-
-
 import Aboutus from './Components/Pages/AboutUs/aboutus';
 import MeditationMain from './Components/Pages/Meditation/meditationmain';
 import Mindfulness from './Components/Pages/Meditation/meditations/mindful';
@@ -70,11 +67,7 @@ import Mantra from './Components/Pages/Meditation/meditations/mantra';
 import Spiritualmeditation from './Components/Pages/Meditation/meditations/spiritual';
 import Visualization from './Components/Pages/Meditation/meditations/visualization';
 import Focused from './Components/Pages/Meditation/meditations/focused';
-
-
-
-
-
+import WellnessPractice from './Components/Pages/Wellness/WellnessPractice';
 
 function App() {
   return (
@@ -135,6 +128,8 @@ function App() {
         <Route path='/shops-pujasamagri' element={<PujaSamagri/>} />
         <Route path='/shops-healthandimmunity' element={<Healthandimmunity/>} />
 
+        {/* Wellness Practices routes */}
+        <Route path='/wellness-practice' element={<WellnessPractice />} />
 
         {/* Yoga routes */}
         <Route path='/yogamain' element={<Yogamain/>} />
