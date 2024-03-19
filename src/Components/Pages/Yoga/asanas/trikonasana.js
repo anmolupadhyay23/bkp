@@ -5,19 +5,25 @@ import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 
 
-const Sirasana = () => {
-    const items = ['To practice Sirsasana, begin by kneeling on the mat and interlocking your fingers, creating a firm base for your forearms.',
-     'Place the crown of your head on the mat, forming a triangle with your forearms and head.',
-      'Lift your hips towards the ceiling, straightening your legs and coming into an inverted position.',
-    'Balance your weight evenly between your forearms and head, engaging your core muscles to stabilize the pose.',
-     'Hold the pose for a few breaths, gradually increasing the duration as you build strength and confidence.'];
+const Trikonasana = () => {
+    const items = ['Begin standing at the top of your mat with your feet about 3-4 feet apart, facing forward.',
+        "Turn your right foot out 90 degrees so it's parallel to the short edge of the mat. Keep your left foot slightly turned inward.",
+        'Inhale and extend your arms out to the sides, parallel to the ground, palms facing down.',
+        'Exhale and extend your torso to the right, bending at the hip, reaching your right hand towards your right ankle or shin.',
+        'Keep your chest open and your left arm reaching up towards the sky, aligning with your shoulders.',
+        'Keep both legs straight and engage your thigh muscles. Your right knee cap should be aligned with the center of your right ankle.',
+        "Gaze either towards your left fingertips or towards the sky if it's comfortable for your neck.",
+        'Hold the pose for 30 seconds to a minute while breathing deeply.',
+        'To release, inhale and press firmly into your feet as you come back up to standing. Repeat on the other side.',
+        'Remember to keep the body in one plane, avoid collapsing into the side body, and maintain a strong connection to the ground with your feet throughout the pose.',];
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/sirasana.png' 
-        title='Sirasana'
-        subtitle1='“Sirsasana is a yoga pose where you balance on'
-        subtitle2="your head, known as the “headstand.”"
+        <YogaintroImage imageSrc='images/yoga/asanasintroimages/trikonasana.png' 
+        title='Trikonasana'
+        subtitle1='"Trikonasana, or Triangle Pose, stretches the sides of the  '
+        subtitle2='body, strengthens the legs, and improves balance and '
+        subtitle3='concentration.”'
         styles={[
             { display: { xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }, textWidth: '45%', titleFontSize: '48px', subtitleFontSize: '20px' },
             { display: { xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '36px', subtitleFontSize: '14px' },
@@ -29,17 +35,17 @@ const Sirasana = () => {
 
           {/* Asana Title*/}
        <Box display='flex' flexDirection='column' height='100%' justifyContent='center' justifyItems='center' alignContent='center' alignItems='center'>
-        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Sirsasana: The King of Yoga Poses</Typography>
-        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Sirsasana: The King of Yoga Poses</Typography>
+        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Trikonasana: Triangle Pose</Typography>
+        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Trikonasana: Triangle Pose</Typography>
 
 
         {/* Asana Info*/}
         <Typography variant="body1" paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
-</Typography>
+        Trikonasana, or Triangle Pose, is a foundational yoga posture that involves standing with legs wide apart and reaching one hand towards the ground while extending the other towards the sky, creating a triangular shape with the body; it stretches the legs, hips, spine, and shoulders, improves balance, and stimulates abdominal organs.
+    </Typography>
 
 <Typography variant="body1" fontSize='11px' paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
+Trikonasana, or Triangle Pose, is a foundational yoga posture that involves standing with legs wide apart and reaching one hand towards the ground while extending the other towards the sky, creating a triangular shape with the body; it stretches the legs, hips, spine, and shoulders, improves balance, and stimulates abdominal organs.
 </Typography>
 
 
@@ -62,12 +68,12 @@ const Sirasana = () => {
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/sirasanabenefits.png' width='100%' height='50%'></img>
+        <img  src='images/yoga/asanasbenefits/trikonasanabenefits.png' width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/sirasanabenefits.png' width='350h' height='70%'></img>
+          <img src='images/yoga/asanasbenefits/trikonasanabenefits.png' width='350h' height='70%'></img>
           </Box>
         
         
@@ -83,7 +89,8 @@ const Sirasana = () => {
   )
 }
 
-export default Sirasana
+export default Trikonasana
+
 
 
 

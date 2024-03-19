@@ -49,6 +49,17 @@ import Healthandimmunity from './Components/Pages/Shop/ShopPages/Healthandimmuni
 import Yogamain from './Components/Pages/Yoga/yogamain';
 import Sirasana from './Components/Pages/Yoga/asanas/sirasana';
 import Sarvangasana from './Components/Pages/Yoga/asanas/sarvangasana';
+import Halasana from './Components/Pages/Yoga/asanas/halasana';
+import Shalabhasana from './Components/Pages/Yoga/asanas/shalabhasana';
+import Paschimottanasana from './Components/Pages/Yoga/asanas/paschimottanasana';
+import Bhujangasana from './Components/Pages/Yoga/asanas/bhujangasana';
+import Dhanurasana from './Components/Pages/Yoga/asanas/dhanurasana';
+import Matsyasana from './Components/Pages/Yoga/asanas/matsyasana';
+import Trikonasana from './Components/Pages/Yoga/asanas/trikonasana';
+import Ardhamatsyendrasana from './Components/Pages/Yoga/asanas/ardhamatsyendrasana';
+import Mayurasana from './Components/Pages/Yoga/asanas/mayurasana';
+import Padahasthasana from './Components/Pages/Yoga/asanas/padahasthasana';
+
 
 
 
@@ -116,8 +127,20 @@ function App() {
 
         {/* Yoga routes */}
         <Route path='/yogamain' element={<Yogamain/>} />
+        <Route path='/trikonasana' element={<Trikonasana/>} />
         <Route path='/sirasana' element={<Sirasana/>} />
         <Route path='/sarvangasana' element={<Sarvangasana/>} />
+        <Route path='/halasana' element={<Halasana/>} />
+        <Route path='/matsyasana' element={<Matsyasana/>} />
+        <Route path='/paschimottanasana' element={<Paschimottanasana/>} />
+        <Route path='/bhujangasana' element={<Bhujangasana/>} />
+        <Route path='/shalabhasana' element={<Shalabhasana/>} />
+        <Route path='/dhanurasana' element={<Dhanurasana/>} />
+        <Route path='/ardhamatsyendrasana' element={<Ardhamatsyendrasana/>} />
+        <Route path='/mayurasana' element={<Mayurasana/>} />
+        <Route path='/padahasthasana' element={<Padahasthasana/>} />
+
+        
 
 
         <Route path='/donationcomingsoon' element={<Donationcomingsoon/>} />

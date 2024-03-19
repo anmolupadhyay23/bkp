@@ -5,19 +5,20 @@ import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 
 
-const Sirasana = () => {
-    const items = ['To practice Sirsasana, begin by kneeling on the mat and interlocking your fingers, creating a firm base for your forearms.',
-     'Place the crown of your head on the mat, forming a triangle with your forearms and head.',
-      'Lift your hips towards the ceiling, straightening your legs and coming into an inverted position.',
-    'Balance your weight evenly between your forearms and head, engaging your core muscles to stabilize the pose.',
-     'Hold the pose for a few breaths, gradually increasing the duration as you build strength and confidence.'];
+const Mayurasana = () => {
+    const items = ['Begin in a kneeling position with your hands shoulder-width apart on the ground, fingers facing toward your feet.',
+        'Lean forward, bending your elbows and bringing your torso between your hands.',
+        'Straighten your legs and lift them off the ground, keeping them together.',
+        'Engage your core and shift your weight forward until your legs are parallel to the ground.',
+        'Hold the pose for a few breaths, then slowly lower down with control.',
+        'Repeat as desired, gradually increasing hold time as you build strength and balance.',];
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/sirasana.png' 
-        title='Sirasana'
-        subtitle1='“Sirsasana is a yoga pose where you balance on'
-        subtitle2="your head, known as the “headstand.”"
+        <YogaintroImage imageSrc='images/yoga/asanasintroimages/mayurasana.png' 
+        title='Mayurasana'
+        subtitle1='“Mayurasana: Yoga pose balancing on hands, strengthens '
+        subtitle2='arms, tones abs, and improves balance.”'
         styles={[
             { display: { xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }, textWidth: '45%', titleFontSize: '48px', subtitleFontSize: '20px' },
             { display: { xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '36px', subtitleFontSize: '14px' },
@@ -29,17 +30,16 @@ const Sirasana = () => {
 
           {/* Asana Title*/}
        <Box display='flex' flexDirection='column' height='100%' justifyContent='center' justifyItems='center' alignContent='center' alignItems='center'>
-        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Sirsasana: The King of Yoga Poses</Typography>
-        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Sirsasana: The King of Yoga Poses</Typography>
+        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Mayurasana:  Peacock Pose</Typography>
+        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Mayurasana:  Peacock Pose</Typography>
 
 
         {/* Asana Info*/}
         <Typography variant="body1" paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
-</Typography>
-
+        Mayurasana, or Peacock Pose, is an advanced yoga posture that strengthens the arms, tones the abdominal muscles, and improves balance, requiring the practitioner to balance the body on the hands while the legs are lifted and extended.
+         </Typography>
 <Typography variant="body1" fontSize='11px' paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
+Mayurasana, or Peacock Pose, is an advanced yoga posture that strengthens the arms, tones the abdominal muscles, and improves balance, requiring the practitioner to balance the body on the hands while the legs are lifted and extended.
 </Typography>
 
 
@@ -62,12 +62,12 @@ const Sirasana = () => {
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/sirasanabenefits.png' width='100%' height='50%'></img>
+        <img  src='images/yoga/asanasbenefits/mayurasanabenefits.png' width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/sirasanabenefits.png' width='350h' height='70%'></img>
+          <img src='images/yoga/asanasbenefits/mayurasanabenefits.png' width='350h' height='70%'></img>
           </Box>
         
         
@@ -83,7 +83,8 @@ const Sirasana = () => {
   )
 }
 
-export default Sirasana
+export default Mayurasana
+
 
 
 

@@ -11,11 +11,11 @@ import TourGuide from '../Widgets/HomeWidgets/TourGuide';
 import WellnessPractice from '../Widgets/HomeWidgets/WellnessPractice';
 import Footer from '../Widgets/HomeWidgets/Footer';
 import NewNavbar from '../Layout/NewNavbar';
+
 // import { useAuth } from '../../Context/authContext';
 
 const HomePage = () => {
 
-  // const [auth,setAuth] = useAuth();
 
   return (
     <Box bgcolor='#f8f7f4'>
@@ -37,4 +37,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;

@@ -2,14 +2,18 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
+import Footer from '../../../Widgets/HomeWidgets/Footer'
 
 
 const Sarvangasana = () => {
-    const items = ['To practice Sirsasana, begin by kneeling on the mat and interlocking your fingers, creating a firm base for your forearms.',
-     'Place the crown of your head on the mat, forming a triangle with your forearms and head.',
-      'Lift your hips towards the ceiling, straightening your legs and coming into an inverted position.',
-    'Balance your weight evenly between your forearms and head, engaging your core muscles to stabilize the pose.',
-     'Hold the pose for a few breaths, gradually increasing the duration as you build strength and confidence.'];
+    const items = ['Begin by lying flat on your back with your arms alongside your body and palms facing down.',
+      'Engage your core muscles as you lift your legs off the ground, bringing them up towards the sky.',
+      'Use your hands to support your lower back as you lift your hips off the ground, bringing your torso into a vertical position.',
+      'Support your back with your hands, keeping your elbows close together and your fingers pointing upwards.',
+      'Straighten your legs towards the sky, stacking your hips over your shoulders and aligning your body in a straight line.',
+      'Keep your neck long and your chin tucked into your chest, maintaining a steady gaze towards your toes.',
+      'Hold the pose for a few breaths, gradually increasing the duration as you build strength and stability.',
+      'To release the pose, slowly lower your legs back down to the ground, one vertebra at a time, and rest in Corpse Pose (Shavasana) for relaxation.'];
   return (
     <Box>
         <NewNavbar/>
@@ -75,7 +79,7 @@ const Sarvangasana = () => {
 
     
 </Box>
-
+<Footer/>
         
        
     </Box>

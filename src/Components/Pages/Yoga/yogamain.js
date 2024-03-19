@@ -55,7 +55,7 @@ const Yogamain = () => {
 
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
-                            <YogaCard imageSrc='images/yoga/asanas/suryakriya.png' asanname='Surya Kriya (सूर्य क्रिया)'></YogaCard>
+                            <YogaCard to='/trikonasana' imageSrc='images/yoga/asanas/trikonasana.png' asanname='Trikonasana (त्रिकोणासन)'></YogaCard>
                         </Grid>
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
@@ -73,33 +73,15 @@ const Yogamain = () => {
 
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
-                            <YogaCard imageSrc='images/yoga/asanas/halasana.png' asanname='Halasana (हलासन)'></YogaCard>
+                            <YogaCard to='/halasana' imageSrc='images/yoga/asanas/halasana.png' asanname='Halasana (हलासन)'></YogaCard>
                         </Grid>
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
-                        <YogaCard imageSrc='images/yoga/asanas/matsyasana.png' asanname='Matsyasana (मत्स्यासन)'></YogaCard>
+                        <YogaCard to='/matsyasana' imageSrc='images/yoga/asanas/matsyasana.png' asanname='Matsyasana (मत्स्यासन)'></YogaCard>
                         </Grid>
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
-                        <YogaCard imageSrc='images/yoga/asanas/Paschimottanasana.png' asanname='Paschimottanasana (पश्चिमोत्तानासन)'></YogaCard>
-                        </Grid>
-                        
-                    </Box>
-
-
-                    <Box display='flex' marginTop='2%'>
-
-                        <Grid item xs={0.5}></Grid>
-                        <Grid item xs={3.3}>
-                            <YogaCard imageSrc='images/yoga/asanas/bhujangasana.png' asanname='Bhujangasana (भुजंगासन)'></YogaCard>
-                        </Grid>
-                        <Grid item xs={0.5}></Grid>
-                        <Grid item xs={3.3}>
-                        <YogaCard imageSrc='images/yoga/asanas/shalabhasana.png' asanname='Shalabhasana (शलभासन)'></YogaCard>
-                        </Grid>
-                        <Grid item xs={0.5}></Grid>
-                        <Grid item xs={3.3}>
-                        <YogaCard imageSrc='images/yoga/asanas/dhanurasana.png' asanname='Dhanurasana (धनुरासन)'></YogaCard>
+                        <YogaCard to='/paschimottanasana'imageSrc='images/yoga/asanas/Paschimottanasana.png' asanname='Paschimottanasana (पश्चिमोत्तानासन)'></YogaCard>
                         </Grid>
                         
                     </Box>
@@ -109,15 +91,33 @@ const Yogamain = () => {
 
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
-                            <YogaCard imageSrc='images/yoga/asanas/Mayurasana.png' asanname='Mayurasana (मयूरासन)'></YogaCard>
+                            <YogaCard to='/bhujangasana' imageSrc='images/yoga/asanas/bhujangasana.png' asanname='Bhujangasana (भुजंगासन)'></YogaCard>
                         </Grid>
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
-                        <YogaCard imageSrc='images/yoga/asanas/ardhamatsyendrasana.png' asanname='Ardha Matsyendrasana (अर्ध मत्स्येन्द्रासन)'></YogaCard>
+                        <YogaCard to='/shalabhasana' imageSrc='images/yoga/asanas/shalabhasana.png' asanname='Shalabhasana (शलभासन)'></YogaCard>
                         </Grid>
                         <Grid item xs={0.5}></Grid>
                         <Grid item xs={3.3}>
-                        <YogaCard imageSrc='images/yoga/asanas/padahasthasana.png' asanname='Pada Hasthasan (पादहस्तासन)'></YogaCard>
+                        <YogaCard to='/dhanurasana'imageSrc='images/yoga/asanas/dhanurasana.png' asanname='Dhanurasana (धनुरासन)'></YogaCard>
+                        </Grid>
+                        
+                    </Box>
+
+
+                    <Box display='flex' marginTop='2%'>
+
+                        <Grid item xs={0.5}></Grid>
+                        <Grid item xs={3.3}>
+                            <YogaCard to='/mayurasana' imageSrc='images/yoga/asanas/Mayurasana.png' asanname='Mayurasana (मयूरासन)'></YogaCard>
+                        </Grid>
+                        <Grid item xs={0.5}></Grid>
+                        <Grid item xs={3.3}>
+                        <YogaCard to='/ardhamatsyendrasana' imageSrc='images/yoga/asanas/ardhamatsyendrasana.png' asanname='Ardha Matsyendrasana (अर्ध मत्स्येन्द्रासन)'></YogaCard>
+                        </Grid>
+                        <Grid item xs={0.5}></Grid>
+                        <Grid item xs={3.3}>
+                        <YogaCard to='/padahasthasana' imageSrc='images/yoga/asanas/padahasthasana.png' asanname='Pada Hasthasana (पादहस्तासन)'></YogaCard>
                         </Grid>
                         
                     </Box>

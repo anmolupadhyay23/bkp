@@ -5,19 +5,23 @@ import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 
 
-const Sirasana = () => {
-    const items = ['To practice Sirsasana, begin by kneeling on the mat and interlocking your fingers, creating a firm base for your forearms.',
-     'Place the crown of your head on the mat, forming a triangle with your forearms and head.',
-      'Lift your hips towards the ceiling, straightening your legs and coming into an inverted position.',
-    'Balance your weight evenly between your forearms and head, engaging your core muscles to stabilize the pose.',
-     'Hold the pose for a few breaths, gradually increasing the duration as you build strength and confidence.'];
+const Padahasthasana = () => {
+    const items = ['Begin in Tadasana (Mountain Pose), standing tall with your feet together and arms by your sides.',
+        'Inhale deeply, lengthening your spine.',
+        'Exhale and engage your core as you hinge forward from your hips, keeping your back straight.',
+        'Lower your torso toward your thighs, reaching your hands toward your feet.',
+        'If possible, grasp your big toes with your fingers. If not, hold onto your shins or ankles.',
+        'Keep your knees straight but not locked, and relax your neck.',
+        'Hold the pose for a few breaths, lengthening the spine with each inhale and deepening the stretch with each exhale.',
+        'To release, inhale as you slowly rise back up to standing, keeping your spine straight.',
+        'Repeat the pose as desired, focusing on maintaining proper alignment and breathing deeply throughout.',];
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/sirasana.png' 
-        title='Sirasana'
-        subtitle1='“Sirsasana is a yoga pose where you balance on'
-        subtitle2="your head, known as the “headstand.”"
+        <YogaintroImage imageSrc='images/yoga/asanasintroimages/padahasthasana.png' 
+        title='Pada Hasthasana'
+        subtitle1='"Pada Hasthasana, or Hand to Foot Pose, stretches the '
+        subtitle2='back of the body, enhances flexibility, and improves balance."'
         styles={[
             { display: { xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }, textWidth: '45%', titleFontSize: '48px', subtitleFontSize: '20px' },
             { display: { xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '36px', subtitleFontSize: '14px' },
@@ -29,17 +33,16 @@ const Sirasana = () => {
 
           {/* Asana Title*/}
        <Box display='flex' flexDirection='column' height='100%' justifyContent='center' justifyItems='center' alignContent='center' alignItems='center'>
-        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Sirsasana: The King of Yoga Poses</Typography>
-        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Sirsasana: The King of Yoga Poses</Typography>
+        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Pada Hasthasana</Typography>
+        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Pada Hasthasana</Typography>
 
 
         {/* Asana Info*/}
         <Typography variant="body1" paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
-</Typography>
-
+        Pada Hasthasana, or Hand to Foot Pose, is a yoga posture that involves bending forward from a standing position to touch the hands to the feet. This asana stretches the entire back of the body, including the spine, hamstrings, and calves, while also improving balance and increasing flexibility.
+         </Typography>
 <Typography variant="body1" fontSize='11px' paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
+Pada Hasthasana, or Hand to Foot Pose, is a yoga posture that involves bending forward from a standing position to touch the hands to the feet. This asana stretches the entire back of the body, including the spine, hamstrings, and calves, while also improving balance and increasing flexibility.
 </Typography>
 
 
@@ -62,12 +65,12 @@ const Sirasana = () => {
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/sirasanabenefits.png' width='100%' height='50%'></img>
+        <img  src='images/yoga/asanasbenefits/padahasthasanabenefits.png' width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/sirasanabenefits.png' width='350h' height='70%'></img>
+          <img src='images/yoga/asanasbenefits/padahasthasanabenefits.png' width='350h' height='70%'></img>
           </Box>
         
         
@@ -83,7 +86,8 @@ const Sirasana = () => {
   )
 }
 
-export default Sirasana
+export default Padahasthasana
+
 
 
 

@@ -5,19 +5,23 @@ import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 
 
-const Sirasana = () => {
-    const items = ['To practice Sirsasana, begin by kneeling on the mat and interlocking your fingers, creating a firm base for your forearms.',
-     'Place the crown of your head on the mat, forming a triangle with your forearms and head.',
-      'Lift your hips towards the ceiling, straightening your legs and coming into an inverted position.',
-    'Balance your weight evenly between your forearms and head, engaging your core muscles to stabilize the pose.',
-     'Hold the pose for a few breaths, gradually increasing the duration as you build strength and confidence.'];
+const Paschimottanasana = () => {
+    const items = ['Start by sitting on the floor with your legs extended straight in front of you. Keep your spine tall and your toes pointing towards the ceiling.',
+        'Engage your quadriceps (front thigh muscles) by flexing your feet and pressing your heels down into the floor.',
+        'Inhale deeply, lengthening your spine and lifting your arms overhead.',
+        'Exhale slowly as you hinge forward at the hips, leading with your chest. Keep your back flat and avoid rounding your spine.',
+        "Reach your hands towards your feet, ankles, or shins, depending on your flexibility. If you can't reach your feet, use a yoga strap wrapped around the soles of your feet to help you reach.",
+        'As you fold forward, continue to breathe deeply and relax into the stretch. With each exhale, try to deepen the stretch slightly, but never force your body into a position that feels uncomfortable.',
+        'Hold the pose for 30 seconds to 1 minute, breathing deeply and relaxing into the stretch.',
+        'To release the pose, inhale as you slowly lift your torso back up to an upright position, lengthening your spine as you go.',
+        'Repeat the pose as desired, gradually increasing the duration of the hold as your flexibility improves.',];
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/sirasana.png' 
-        title='Sirasana'
-        subtitle1='“Sirsasana is a yoga pose where you balance on'
-        subtitle2="your head, known as the “headstand.”"
+        <YogaintroImage imageSrc='images/yoga/asanasintroimages/paschimottanasana.png' 
+        title='Paschittanasana'
+        subtitle1='“Paschimottanasana: Seated Forward Bend, stretches the '
+        subtitle2='back of the body.”'
         styles={[
             { display: { xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }, textWidth: '45%', titleFontSize: '48px', subtitleFontSize: '20px' },
             { display: { xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '36px', subtitleFontSize: '14px' },
@@ -29,17 +33,17 @@ const Sirasana = () => {
 
           {/* Asana Title*/}
        <Box display='flex' flexDirection='column' height='100%' justifyContent='center' justifyItems='center' alignContent='center' alignItems='center'>
-        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Sirsasana: The King of Yoga Poses</Typography>
-        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Sirsasana: The King of Yoga Poses</Typography>
+        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Paschimottanasana: Seated Forward Bend</Typography>
+        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Paschimottanasana: Seated Forward Bend</Typography>
 
 
         {/* Asana Info*/}
         <Typography variant="body1" paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
-</Typography>
+        Paschimottanasana is a seated yoga pose that involves folding forward from the hips to stretch the back of the body, including the spine, hamstrings, and shoulders. It promotes relaxation, relieves stress, and improves digestion .
+        </Typography>
 
 <Typography variant="body1" fontSize='11px' paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
+Paschimottanasana is a seated yoga pose that involves folding forward from the hips to stretch the back of the body, including the spine, hamstrings, and shoulders. It promotes relaxation, relieves stress, and improves digestion .
 </Typography>
 
 
@@ -62,12 +66,12 @@ const Sirasana = () => {
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/sirasanabenefits.png' width='100%' height='50%'></img>
+        <img  src='images/yoga/asanasbenefits/paschimottanasanabenefits.png' width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/sirasanabenefits.png' width='350h' height='70%'></img>
+          <img src='images/yoga/asanasbenefits/paschimottanasanabenefits.png' width='350h' height='70%'></img>
           </Box>
         
         
@@ -83,7 +87,7 @@ const Sirasana = () => {
   )
 }
 
-export default Sirasana
+export default Paschimottanasana
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-const YogaintroImage = ({ imageSrc, title, subtitle1, subtitle2, styles }) => {
+const YogaintroImage = ({ imageSrc, title, subtitle1, subtitle2, subtitle3, styles }) => {
     return (
         <Box paddingTop='100px'>
             {styles.map((style, index) => (
@@ -12,6 +12,7 @@ const YogaintroImage = ({ imageSrc, title, subtitle1, subtitle2, styles }) => {
                             <Typography fontSize={style.titleFontSize} fontWeight='bold' color='white'>{title}</Typography>
                             <Typography fontSize={style.subtitleFontSize} color='white'>{subtitle1}</Typography>
                             <Typography fontSize={style.subtitleFontSize} color='white'>{subtitle2}</Typography>
+                            <Typography fontSize={style.subtitleFontSize} color='white'>{subtitle3}</Typography>
                         </Box>
                     </Box>
                 </Box>

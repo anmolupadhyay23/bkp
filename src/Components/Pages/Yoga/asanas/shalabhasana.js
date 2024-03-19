@@ -5,19 +5,22 @@ import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 
 
-const Sirasana = () => {
-    const items = ['To practice Sirsasana, begin by kneeling on the mat and interlocking your fingers, creating a firm base for your forearms.',
-     'Place the crown of your head on the mat, forming a triangle with your forearms and head.',
-      'Lift your hips towards the ceiling, straightening your legs and coming into an inverted position.',
-    'Balance your weight evenly between your forearms and head, engaging your core muscles to stabilize the pose.',
-     'Hold the pose for a few breaths, gradually increasing the duration as you build strength and confidence.'];
+const Shalabhasana = () => {
+    const items = ['Lie flat on your stomach (prone position) on a yoga mat with your legs together and your arms resting alongside your body, palms facing down.',
+        'Rest your forehead on the mat and relax your entire body, allowing your breath to become steady and calm.',
+        'On an inhalation, engage your abdominal muscles and lift your head, chest, arms, and legs off the mat simultaneously. Keep your gaze directed forward and your neck in line with your spine.',
+        'Extend through your fingertips and toes, reaching actively in opposite directions to lengthen your body.',
+        'Keep your legs straight and strong as you lift them higher, focusing on engaging the muscles of your lower back and buttocks.',
+        'Hold the pose for 15 to 30 seconds, breathing smoothly and deeply. Avoid holding your breath or tensing your shoulders.',
+        'To release, exhale slowly as you lower your head, chest, arms, and legs back to the mat. Rest in the prone position for a few breaths to relax your body.',
+        'Repeat the pose 2-3 times, gradually increasing the duration of the hold as you build strength and flexibility.',];
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/sirasana.png' 
-        title='Sirasana'
-        subtitle1='“Sirsasana is a yoga pose where you balance on'
-        subtitle2="your head, known as the “headstand.”"
+        <YogaintroImage imageSrc='images/yoga/asanasintroimages/shalabhasana.png' 
+        title='Shalabhasana'
+        subtitle1='“Shalabhasana, or Locust Pose, strengthens the back '
+        subtitle2='muscles by lifting the legs and chest off the ground.”'
         styles={[
             { display: { xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }, textWidth: '45%', titleFontSize: '48px', subtitleFontSize: '20px' },
             { display: { xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '36px', subtitleFontSize: '14px' },
@@ -29,17 +32,17 @@ const Sirasana = () => {
 
           {/* Asana Title*/}
        <Box display='flex' flexDirection='column' height='100%' justifyContent='center' justifyItems='center' alignContent='center' alignItems='center'>
-        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Sirsasana: The King of Yoga Poses</Typography>
-        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Sirsasana: The King of Yoga Poses</Typography>
+        <Typography sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}} color='black' fontSize='24px'>Shalabhasana:  Locust Pose</Typography>
+        <Typography sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}} color='black' fontSize='14px'>Shalabhasana:  Locust Pose</Typography>
 
 
         {/* Asana Info*/}
         <Typography variant="body1" paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
+        Shalabhasana, known as Locust Pose in yoga, involves lifting the legs and chest off the ground, strengthening the back muscles and improving spinal flexibility and posture.
 </Typography>
 
 <Typography variant="body1" fontSize='11px' paddingTop='24px' paddingBottom='60px' sx={{display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}}>
-        Sirsasana, also known as the Headstand pose, is considered the king of all yoga asanas. In this pose, the body is inverted, and the weight is supported on the forearms, while the crown of the head rests lightly on the ground
+Shalabhasana, known as Locust Pose in yoga, involves lifting the legs and chest off the ground, strengthening the back muscles and improving spinal flexibility and posture.
 </Typography>
 
 
@@ -62,12 +65,12 @@ const Sirasana = () => {
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/sirasanabenefits.png' width='100%' height='50%'></img>
+        <img  src='images/yoga/asanasbenefits/shalabhasanabenefits.png' width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/sirasanabenefits.png' width='350h' height='70%'></img>
+          <img src='images/yoga/asanasbenefits/shalabhasanabenefits.png' width='350h' height='70%'></img>
           </Box>
         
         
@@ -83,7 +86,7 @@ const Sirasana = () => {
   )
 }
 
-export default Sirasana
+export default Shalabhasana
 
 
 
