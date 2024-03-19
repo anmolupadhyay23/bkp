@@ -1,8 +1,9 @@
 import { Search } from '@mui/icons-material'
 import { Box, Button, InputAdornment, Paper, TextField, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const MandirIntro = ({ mandir_type, mandir_image }) => {
+
     return (
         <Box>
             <MandirImage mandir_type={mandir_type} mandir_image={mandir_image} />

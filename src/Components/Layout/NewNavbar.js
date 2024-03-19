@@ -2,7 +2,8 @@ import { Avatar, Box, Button, Drawer, Grid, IconButton, Menu, Typography } from 
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './../../Styles/NewNavbar.css'
-import { MenuOutlined, Close, KeyboardArrowDown } from '@mui/icons-material'
+import { MenuOutlined, Close } from '@mui/icons-material'
+import { useAuth } from '../../Context/authContext'
 
 const NewNavbar = () => {
 
@@ -11,12 +12,30 @@ const NewNavbar = () => {
 
     const [sidebar, setSidebar] = useState(false)
 
+    const [auth, setAuth] = useAuth();
+
     const handleUserbox = (event) => {
         setUserbox(event.currentTarget)
     }
 
     const closeUserbox = () => {
         setUserbox(userbox => !userbox)
+    }
+
+    const log_out = () => {
+        setAuth({
+            ...auth,
+            userId: null,
+            token: "",
+            name: "",
+            email: "",
+            address: "",
+            phone: null
+        });
+
+        localStorage.removeItem('auth');
+
+        window.location.reload();
     }
 
     return (
@@ -128,7 +147,7 @@ const NewNavbar = () => {
                         </IconButton  >
                     </Box>
                     <Menu id='userbox-menu' anchorEl={userbox} open={openUserbox} MenuListProps={{ "aria-labelledby": 'user-btn', }} onClose={closeUserbox} className='menu' style={{ marginRight: '1%', marginLeft: '7%' }}>
-                        <Box marginLeft='5%' >
+                        {!auth.token && (<Box marginLeft='5%' >
                             <Box>
                                 <Typography fontSize='16px' fontWeight='500' color='#f24e1e'>Namaste 🙏</Typography>
                                 <Box sx={{ width: '100%', border: 'none', borderTop: '2px solid black', marginBottom: '2%' }} mx='auto' />
@@ -146,6 +165,38 @@ const NewNavbar = () => {
                                 <span style={{ color: '#f24e1e' }}> PRIVACY POLICY </span>
                             </Typography>
                         </Box>
+                        )}
+                        {auth.token && (<Box marginLeft='10%' >
+                            <Box>
+                                <Typography fontSize='16px' fontWeight='500' color='#f24e1e'>Namaste {auth.name}</Typography>
+                                <Typography fontSize='12px'>{auth.email}</Typography>
+                                <Box sx={{ width: '100%', border: 'none', borderTop: '2px solid black', marginBottom: '2%' }} mx='auto' />
+                            </Box>
+                            <Box display='flex' flexDirection='column' marginTop='5%' marginBottom='7%'>
+                                <NavLink to='/my-account' style={{ textDecoration: 'none' }}>
+                                    <Typography fontSize='14px' fontWeight='100' color='black' marginBottom='3%'>My Account</Typography>
+                                </NavLink>
+                                <NavLink to='/your-order' style={{ textDecoration: 'none' }}>
+                                    <Typography fontSize='14px' fontWeight='100' color='black' marginBottom='3%'>Order</Typography>
+                                </NavLink>
+                                <NavLink to='/saved-address' style={{ textDecoration: 'none' }}>
+                                    <Typography fontSize='14px' fontWeight='100' color='black' marginBottom='3%'>Saved address</Typography>
+                                </NavLink>
+                                <NavLink to='/contact-us' style={{ textDecoration: 'none' }}>
+                                    <Typography fontSize='14px' fontWeight='100' color='black'>Contact us</Typography>
+                                </NavLink>
+                            </Box>
+                            <Box marginTop='3%' marginBottom='3%'>
+                                <Button onClick={log_out} style={{ backgroundColor: '#f24e1e', color: 'white', width: '100%', borderRadius: '10px', textTransform: 'none' }}>Log Out</Button>
+                            </Box>
+                            <Typography fontSize='12px' >
+                                By Logging In/Signing up. I agree to the
+                                <span style={{ color: '#f24e1e' }}> TERMS OF USE </span>
+                                &
+                                <span style={{ color: '#f24e1e' }}> PRIVACY POLICY </span>
+                            </Typography>
+                        </Box>
+                        )}
                     </Menu>
                 </Grid>
             </Grid>

@@ -37,7 +37,7 @@ var north_mandir = [
     "place4": "(Kangra, Himachal Pradesh)",
     "content4": "Shri Bajreshwari Devi , one of the 51 Shaktipeeths, is a famous Hindu  in north India dedicated to the goddess Bajreshwari Devi, the Goddess of Lightening. Goddess Bajreshwari Devi is also known by Vajreshwari Devi or Brajeshwari Devi.",
     "nav4": "/bajreshwari-devi",
-  
+
     "img5": "/images/mandir/north/kalkaji.png",
     "name5": "Shri Kalkaji ",
     "place5": "(Nehru Place, New Delhi)",
@@ -134,6 +134,7 @@ var north_mandir = [
 ]
 
 const NorthMandir = () => {
+
   return (
     <Box>
       <NewNavbar />

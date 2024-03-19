@@ -18,11 +18,11 @@ const Footer = () => {
                             <Typography fontWeight='bold' fontSize='20px'>Follow us</Typography>
                             <IconButton style={{ color: '#1da1f2', }}><Twitter /></IconButton>
                             <IconButton style={{ color: '#c33e86' }}>
-                            <a href="https://www.instagram.com/bhagwankaprashad?igsh=MWQ1ZjEwNnVlMTl5NA%3D%3D&utm_source=qr " target="_blank" rel="noopener noreferrer">
-                             <Instagram />
-                             </a>
-                                
-                                </IconButton>
+                                <a href="https://www.instagram.com/bhagwankaprashad?igsh=MWQ1ZjEwNnVlMTl5NA%3D%3D&utm_source=qr " target="_blank" rel="noopener noreferrer">
+                                    <Instagram />
+                                </a>
+
+                            </IconButton>
                             <IconButton style={{ color: '#1da1f2' }}><Facebook /></IconButton>
                         </Box>
                     </Box>

@@ -35,8 +35,12 @@ const Login = () => {
                 setAuth({
                     ...auth,
                     userId: res.data._id,
-                    token: res.data.token
-                })
+                    token: res.data.token,
+                    name: res.data.name,
+                    email: res.data.email,
+                    address: res.data.address,
+                    phone: res.data.phone
+                });
 
                 // SAVE in Local Storage
                 localStorage.setItem('auth',JSON.stringify(res.data));

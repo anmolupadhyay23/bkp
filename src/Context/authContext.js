@@ -7,6 +7,10 @@ const AuthProvider = ({ children }) => {
     const [auth,setAuth] = useState({
         userId: null,
         token: "",
+        name: "",
+        email: "",
+        address: "",
+        phone: null,
     });
 
     // Used to maintain state
@@ -15,14 +19,18 @@ const AuthProvider = ({ children }) => {
 
         if(data){
             const parseData = JSON.parse(data);
-            setAuth({
-                ...auth,
+            setAuth( prevAuth => ({
+                ...prevAuth,
                 userId: parseData._id,
-                token: parseData.token
-            })
+                token: parseData.token,
+                name: parseData.name,
+                email: parseData.email,
+                address: parseData.address,
+                phone: parseData.phone
+            }))
         }
 
-    }, [auth]);
+    }, []);
 
     return (
         <AuthContext.Provider value={[auth,setAuth]}>
