@@ -24,8 +24,8 @@ const Meditationdescription = ({ title, info,goal, items }) => {
                 <Typography display='hidden'></Typography>
             </Box>
             <Box display='flex' flexDirection='column' justifyContent='center' justifyItems='center' alignContent='center' alignItems='center' >
-                <Typography sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' } }} fontSize='24px' fontWeight='bold' fontFamily='Inter' fontStyle='Italic'>{goal}</Typography>
-                <Typography sx={{ display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' } }} fontSize='12px' fontWeight='bold' fontFamily='Inter' fontStyle='Italic'>{goal}</Typography>
+                <Typography sx={{ display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' } }} fontSize='24px' fontWeight='bold' fontFamily='Inter' fontStyle='Italic'>{goal}</Typography>
+                <Typography sx={{ display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' } }} fontSize='12px' fontWeight='bold' fontFamily='Inter' fontStyle='Italic'>{goal}</Typography>
             </Box>
       </Box>
       </Box>
