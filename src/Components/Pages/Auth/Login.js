@@ -4,14 +4,15 @@ import './../../../Styles/Login.css'
 import { Visibility, Google } from '@mui/icons-material'
 import { NavLink, useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import { useAuth } from '../../../Context/authContext' 
+import { useAuth } from '../../../Context/authContext'
+import GoogleAuth from './GoogleAuth'
 
 const Login = () => {
 
     const [user, setUser] = useState('');
     const [password, setPassword] = useState('');
 
-    const [auth,setAuth] = useAuth();
+    const [auth, setAuth] = useAuth();
 
     const navigate = useNavigate();
 
@@ -45,7 +46,7 @@ const Login = () => {
                 });
 
                 // SAVE in Local Storage
-                localStorage.setItem('auth',JSON.stringify(res.data));
+                localStorage.setItem('auth', JSON.stringify(res.data));
                 console.log(res.data);
 
                 navigate('/');
@@ -105,13 +106,16 @@ const Login = () => {
                                 <Box sx={{ width: '50%', border: 'none', borderTop: '0.1px solid black', marginBottom: '2%' }} />
                             </Box>
 
-                            <Button style={{ backgroundColor: 'transparent', width: '100%', borderRadius: '20px', textTransform: 'none', border: '1px solid black' }}>
+                            {/* <Button style={{ backgroundColor: 'transparent', width: '100%', borderRadius: '20px', textTransform: 'none', border: '1px solid black' }}>
                                 <IconButton>
                                     <Google />
                                 </IconButton>
 
                                 <Typography color='black'>Log in with Google</Typography>
-                            </Button>
+                            </Button> */}
+                            <Box display='flex' justifyContent='center'>
+                                <GoogleAuth />
+                            </Box>
                         </Box>
                         <Box display='flex' alignItems='center' justifyContent='center' marginTop='3%'>
                             <Typography>Don't have an account?</Typography>

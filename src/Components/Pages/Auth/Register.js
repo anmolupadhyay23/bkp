@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { Google, Visibility } from '@mui/icons-material'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import GoogleAuth from './GoogleAuth'
 
 const Register = () => {
 
@@ -90,12 +91,15 @@ const Register = () => {
                 <Box sx={{ width: '50%', border: 'none', borderTop: '0.1px solid black', marginBottom: '2%' }} />
               </Box>
 
-              <Button style={{ backgroundColor: 'transparent', width: '100%', borderRadius: '20px', textTransform: 'none', border: '1px solid black' }}>
+              {/* <Button style={{ backgroundColor: 'transparent', width: '100%', borderRadius: '20px', textTransform: 'none', border: '1px solid black' }}>
                 <IconButton style={{ color: '#f24e1e', marginRight: '1%' }}>
                   <Google />
                 </IconButton>
                 <Typography color='black'>Sign Up with Google</Typography>
-              </Button>
+              </Button> */}
+              <Box display='flex' justifyContent='center'>
+                <GoogleAuth />
+              </Box>
             </Box>
             <Box display='flex' alignItems='center' justifyContent='center' marginTop='1%'>
               <Typography>Already have an account?</Typography>
