@@ -15,6 +15,8 @@ const Login = () => {
 
     const navigate = useNavigate();
 
+    const [eye, setEye] = useState(true);
+
     const login_user = async () => {
         try {
             const res = await axios.post(
@@ -79,7 +81,7 @@ const Login = () => {
                     <Box marginLeft='15%' marginRight='15%' marginTop='5%'>
                         <Box>
                             <TextField placeholder='Username' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={user} onChange={(event) => setUser(event.target.value)}></TextField>
-                            <TextField placeholder='Password' fullWidth='true' InputProps={{ endAdornment: (<InputAdornment position='end'><Visibility style={{ color: '#f24e1e' }} /></InputAdornment>) }} sx={{ border: 'none', "& fieldset": { border: 'none' }, }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
+                            <TextField type={!eye ? 'text' : 'password'} placeholder='Password' fullWidth='true' InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setEye(!eye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} sx={{ border: 'none', "& fieldset": { border: 'none' }, }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
                         </Box>
                         <Box display='flex' justifyContent='space-between' marginTop='3%' marginBottom='3%'>
                             <Box display='flex' alignItems='center'>
@@ -138,7 +140,7 @@ const Login = () => {
                     <Box marginLeft='5%' marginRight='5%' marginTop='5%'>
                         <Box>
                             <TextField placeholder='Username' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '7%' }} className='text-field-auth'></TextField>
-                            <TextField placeholder='Password' fullWidth='true' InputProps={{ endAdornment: (<InputAdornment position='end'><Visibility style={{ color: '#f24e1e' }} /></InputAdornment>) }} sx={{ border: 'none', "& fieldset": { border: 'none' }, }} className='text-field-auth'></TextField>
+                            <TextField type={!eye ? 'text' : 'password'} placeholder='Password' fullWidth='true' InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setEye(!eye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} sx={{ border: 'none', "& fieldset": { border: 'none' }, }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
                         </Box>
                         <Box display='flex' justifyContent='space-between' marginTop='5%' marginBottom='7%'>
                             <Box display='flex' alignItems='center'>
@@ -194,7 +196,7 @@ const Login = () => {
                     <Box marginLeft='8%' marginRight='8%' marginTop='5%'>
                         <Box>
                             <TextField placeholder='Username' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '7%' }} className='text-field-auth'></TextField>
-                            <TextField placeholder='Password' fullWidth='true' InputProps={{ endAdornment: (<InputAdornment position='end'><Visibility style={{ color: '#f24e1e' }} /></InputAdornment>) }} sx={{ border: 'none', "& fieldset": { border: 'none' }, }} className='text-field-auth'></TextField>
+                            <TextField type={!eye ? 'text' : 'password'} placeholder='Password' fullWidth='true' InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setEye(!eye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} sx={{ border: 'none', "& fieldset": { border: 'none' }, }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
                         </Box>
                         <Box display='flex' justifyContent='space-between' marginTop='5%' marginBottom='7%'>
                             <Box display='flex' alignItems='center'>

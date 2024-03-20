@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Box, Grid, TextField, Typography, IconButton, Button } from '@mui/material'
+import { Box, Grid, TextField, Typography, IconButton, Button, InputAdornment } from '@mui/material'
 import './../../../Styles/Register.css'
 import { NavLink } from 'react-router-dom'
-import { Google } from '@mui/icons-material'
+import { Google, Visibility } from '@mui/icons-material'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
@@ -12,6 +12,9 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
+
+  const [eye, setEye] = useState(true);
+  const [confirmEye, setConfirmEye] = useState(true);
 
   const navigate = useNavigate();
 
@@ -36,8 +39,8 @@ const Register = () => {
 
         // Temporary save the userId to check during otp verification
         const tempId = res.data._id;
-        localStorage.setItem('tempId',tempId);
-        
+        localStorage.setItem('tempId', tempId);
+
         navigate('/otp-verification');
       }
 
@@ -70,8 +73,8 @@ const Register = () => {
             <Box>
               <TextField placeholder='Name' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={name} onChange={(event) => setName(event.target.value)}></TextField>
               <TextField placeholder='Email' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={email} onChange={(event) => setEmail(event.target.value)}></TextField>
-              <TextField placeholder='Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
-              <TextField placeholder='Confirm Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={confirm} onChange={(event) => setConfirm(event.target.value)}></TextField>
+              <TextField type={!eye ? 'text' : 'password'} placeholder='Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setEye(!eye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
+              <TextField type={!confirmEye ? 'text' : 'password'} placeholder='Confirm Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setConfirmEye(!confirmEye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} className='text-field-auth' value={confirm} onChange={(event) => setConfirm(event.target.value)}></TextField>
             </Box>
             <Box>
               <Box marginBottom='4%' marginTop='4%'>
@@ -122,8 +125,8 @@ const Register = () => {
             <Box>
               <TextField placeholder='Name' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={name} onChange={(event) => setName(event.target.value)}></TextField>
               <TextField placeholder='Email' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={email} onChange={(event) => setEmail(event.target.value)}></TextField>
-              <TextField placeholder='Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
-              <TextField placeholder='Confirm Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={confirm} onChange={(event) => setConfirm(event.target.value)}></TextField>
+              <TextField type={!eye ? 'text' : 'password'} placeholder='Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setEye(!eye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
+              <TextField type={!confirmEye ? 'text' : 'password'} placeholder='Confirm Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setConfirmEye(!confirmEye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} className='text-field-auth' value={confirm} onChange={(event) => setConfirm(event.target.value)}></TextField>
             </Box>
             <Box>
               <Box marginBottom='4%' marginTop='7%'>
@@ -170,8 +173,8 @@ const Register = () => {
             <Box>
               <TextField placeholder='Name' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={name} onChange={(event) => setName(event.target.value)}></TextField>
               <TextField placeholder='Email' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={email} onChange={(event) => setEmail(event.target.value)}></TextField>
-              <TextField placeholder='Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
-              <TextField placeholder='Confirm Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} className='text-field-auth' value={confirm} onChange={(event) => setConfirm(event.target.value)}></TextField>
+              <TextField type={!eye ? 'text' : 'password'} placeholder='Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setEye(!eye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} className='text-field-auth' value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
+              <TextField type={!confirmEye ? 'text' : 'password'} placeholder='Confirm Password' fullWidth='true' sx={{ border: 'none', "& fieldset": { border: 'none' }, marginBottom: '3%' }} InputProps={{ endAdornment: (<InputAdornment position='end'><IconButton onClick={() => setConfirmEye(!confirmEye)}><Visibility style={{ color: '#f24e1e' }} /></IconButton></InputAdornment>) }} className='text-field-auth' value={confirm} onChange={(event) => setConfirm(event.target.value)}></TextField>
             </Box>
             <Box>
               <Box marginBottom='4%' marginTop='7%'>
