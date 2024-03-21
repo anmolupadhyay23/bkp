@@ -41,7 +41,7 @@ var slider = [
 
 const CarouselSlider = () => {
     return (
-        <Carousel className='carousel' indicators={false} animation='slide' duration={1000} autoPlay={false} navButtonsAlwaysVisible={true}  >
+        <Carousel className='carousel' indicators={false} animation='slide' duration={1000} autoPlay={true} swipe={true} navButtonsAlwaysVisible={false}  >
             {
                 slider.map((item) => <Item key={item.id} item={item} />)
             }
@@ -50,6 +50,8 @@ const CarouselSlider = () => {
 }
 
 function Item({ item }) {
+
+    {/* 
 
     const [positions, setPositions] = useState([
         { top: '3%', right: '10%', width: '100%', zIndex: 1 },
@@ -75,11 +77,9 @@ function Item({ item }) {
         { top: '35%', right: '0%', width: '70%', zIndex: 2 },
     ])
 
-    /* Anticlockwise rotation */
     useEffect(() => {
         const interval = setInterval(() => {
             setPositions(prevPositions => {
-                /* For lg and big screens */
                 const newPositions = [...prevPositions];
                 const lastPosition = newPositions.pop();
                 newPositions.unshift(lastPosition);
@@ -93,7 +93,6 @@ function Item({ item }) {
     useEffect(() => {
         const intervalMd = setInterval(() => {
             setPositionsMd(prevPositionsMd => {
-                /* For md screens */
                 const newPositionsMd = [...prevPositionsMd];
                 const lastPositionMd = newPositionsMd.pop();
                 newPositionsMd.unshift(lastPositionMd);
@@ -106,7 +105,6 @@ function Item({ item }) {
     useEffect(() => {
         const intervalXs = setInterval(() => {
             setPositionsXs(prevPositionsXs => {
-                /* For xs screens */
                 const newPositionsXs = [...prevPositionsXs];
                 const lastPositionXs = newPositionsXs.pop();
                 newPositionsXs.unshift(lastPositionXs);
@@ -119,7 +117,6 @@ function Item({ item }) {
     useEffect(() => {
         const intervalSm = setInterval(() => {
             setPositionsSm(prevPositionsSm => {
-                /* For sm screens */
                 const newPositionsSm = [...prevPositionsSm];
                 const lastPositionSm = newPositionsSm.pop();
                 newPositionsSm.unshift(lastPositionSm);
@@ -128,6 +125,9 @@ function Item({ item }) {
         }, 2000);
         return () => clearInterval(intervalSm);
     }, []);
+
+    */}
+
 
     return (
         <Box>
@@ -245,72 +245,64 @@ function Item({ item }) {
             </Box>
             )} */}
             {item.id === 1 && (<Box marginLeft='2%' marginRight='2%'>
-                <Grid container borderRadius='15px' style={{ backgroundImage: "url('/images/home/carousel_1.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                    <Grid item xs={6}>
-                        <Box marginLeft='5%'>
+                <Grid container borderRadius='15px'>
+                    <Grid item xs={12} >
+                        <Box position='relative'>
+                            <img src='/images/home/carousel_1.png' width='100%' />
 
-                            <Box marginTop='10%' display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }}>
-                                <Typography style={{ fontSize: '40px', fontWeight: '500' }}>{item.heading}</Typography>
-                            </Box>
-                            <Box marginTop='10%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }}>
-                                <Typography style={{ fontSize: '26px', fontWeight: '500' }}>{item.heading}</Typography>
-                            </Box>
-                            <Box marginTop='10%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-                                <Typography style={{ fontSize: '10px', fontWeight: '500' }}>{item.heading}</Typography>
-                            </Box>
-
-                            <Box marginRight='5%' marginBottom='8%' display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }}>
-                                <Typography style={{ fontSize: '16px' }}>{item.subheading}</Typography>
-                            </Box>
-                            <Box marginRight='5%' marginBottom='4%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }}>
-                                <Typography style={{ fontSize: '12px' }}>{item.subheading}</Typography>
-                            </Box>
-                            <Box marginRight='5%' marginBottom='4%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-                                <Typography style={{ fontSize: '8px' }}>{item.subheading}</Typography>
-                            </Box>
-                            {item.btnText && item.btnText.trim() !== '' && (
+                            <Box position='absolute' top='15%' left='3%' marginRight='50%' display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }}>
                                 <Box>
-                                    <Box display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
-                                        <NavLink to='/our-services'>
-                                            <Button style={{ borderRadius: '35px', backgroundColor: '#f24e1e', color: 'white', padding: '2.0%', textTransform: 'none' }}>{item.btnText}</Button>
-                                        </NavLink>
-                                    </Box>
-                                    <Box display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-                                        <NavLink to='/our-services'>
-                                            <Button style={{ borderRadius: '35px', backgroundColor: '#f24e1e', color: 'white', padding: '2.0%', textTransform: 'none', fontSize: '8px' }}>{item.btnText}</Button>
-                                        </NavLink>
-                                    </Box>
+                                    <Typography style={{ fontSize: '40px', fontWeight: '500' }}>
+                                        Bringing Sacred Blessings Home: Your Divine Connection Awaits Online
+                                    </Typography>
                                 </Box>
+                                <Box marginTop='5%'>
+                                    <Typography style={{ fontSize: '16px' }}>
+                                        You're invited to connect with something sacred and special from the comfort of your home online. It's an opportunity to experience a divine connection.
+                                    </Typography>
+                                </Box>
+                                <Box marginTop='10%'>
+                                    <NavLink to='/our-services'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: '#f24e1e', color: 'white', padding: '2.0%', textTransform: 'none' }}>Explore Services</Button>
+                                    </NavLink>
+                                </Box>
+                            </Box>
 
-                            )}
-                            <Box marginBottom='5%' marginTop='8%' >
-                                <Typography style={{ fontSize: '16px', fontWeight: 'bold' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }} >{item.quote}</Typography>
+                            <Box position='absolute' top='15%' left='3%' marginRight='50%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }}>
+                                <Box>
+                                    <Typography style={{ fontSize: '28px', fontWeight: '500' }}>
+                                        Bringing Sacred Blessings Home: Your Divine Connection Awaits Online
+                                    </Typography>
+                                </Box>
+                                <Box marginTop='5%'>
+                                    <Typography style={{ fontSize: '14px' }}>
+                                        You're invited to connect with something sacred and special from the comfort of your home online. It's an opportunity to experience a divine connection.
+                                    </Typography>
+                                </Box>
+                                <Box marginTop='5%'>
+                                    <NavLink to='/our-services'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: '#f24e1e', color: 'white', padding: '2.0%', textTransform: 'none' }}>Explore Services</Button>
+                                    </NavLink>
+                                </Box>
                             </Box>
-                            <Box marginBottom='5%' marginTop='8%'>
-                                <Typography style={{ fontSize: '10px', fontWeight: 'bold' }} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>{item.quote}</Typography>
+
+                            <Box position='absolute' top='15%' left='5%' marginRight='50%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
+                                <Box>
+                                    <Typography style={{ fontSize: '10px', fontWeight: '500' }}>
+                                        Bringing Sacred Blessings Home: Your Divine Connection Awaits Online
+                                    </Typography>
+                                </Box>
+                                <Box marginTop='5%'>
+                                    <Typography style={{ fontSize: '6px' }}>
+                                        You're invited to connect with something sacred and special from the comfort of your home online. It's an opportunity to experience a divine connection.
+                                    </Typography>
+                                </Box>
+                                <Box marginTop='10%'>
+                                    <NavLink to='/our-services'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: '#f24e1e', color: 'white', paddingLeft: '3%', paddingRight: '3%', textTransform: 'none', fontSize: '6px' }}>Explore Services</Button>
+                                    </NavLink>
+                                </Box>
                             </Box>
-                        </Box>
-                    </Grid>
-                    <Grid item xs={6} overflow='hidden' marginTop='3%'>
-                        <Box sx={{ position: 'relative', height: '100%' }} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }} marginLeft='25%' marginRight='5%' marginBottom='10%' paddingTop='40%'>
-                            <img src={item.img1} alt="Shiva" className="image-transition" style={{ position: 'absolute', ...positions[0] }} />
-                            <img src={item.img2} alt="Krishna" className="image-transition" style={{ position: 'absolute', ...positions[1] }} />
-                            <img src={item.img3} alt="Ganesh" className="image-transition" style={{ position: 'absolute', ...positions[2] }} />
-                        </Box>
-                        <Box sx={{ position: 'relative', height: '100%' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }} marginLeft='25%' marginRight='5%' marginBottom='10%' paddingTop='40%'>
-                            <img src={item.img1} alt="Shiva" className="image-transition" style={{ position: 'absolute', ...positionsMd[0] }} />
-                            <img src={item.img2} alt="Krishna" className="image-transition" style={{ position: 'absolute', ...positionsMd[1] }} />
-                            <img src={item.img3} alt="Ganesh" className="image-transition" style={{ position: 'absolute', ...positionsMd[2] }} />
-                        </Box>
-                        <Box sx={{ position: 'relative', height: '100%' }} display={{ xs: 'none', sm: 'block', md: 'none', lg: 'none', xl: 'none' }} marginLeft='25%' marginRight='5%' marginBottom='10%' paddingTop='40%'>
-                            <img src={item.img1} alt="Shiva" className="image-transition" style={{ position: 'absolute', ...positionsSm[0] }} />
-                            <img src={item.img2} alt="Krishna" className="image-transition" style={{ position: 'absolute', ...positionsSm[1] }} />
-                            <img src={item.img3} alt="Ganesh" className="image-transition" style={{ position: 'absolute', ...positionsSm[2] }} />
-                        </Box>
-                        <Box sx={{ position: 'relative', height: '100%' }} display={{ xs: 'block', sm: 'none', md: 'none', lg: 'none', xl: 'none' }} marginLeft='25%' marginRight='5%' marginBottom='10%' paddingTop='40%'>
-                            <img src={item.img1} alt="Shiva" className="image-transition" style={{ position: 'absolute', ...positionsXs[0] }} />
-                            <img src={item.img2} alt="Krishna" className="image-transition" style={{ position: 'absolute', ...positionsXs[1] }} />
-                            <img src={item.img3} alt="Ganesh" className="image-transition" style={{ position: 'absolute', ...positionsXs[2] }} />
                         </Box>
                     </Grid>
                 </Grid>
@@ -331,21 +323,25 @@ function Item({ item }) {
                                     <Typography style={{ fontSize: '16px' }}>|| Rudraksha for peace, Progress, Prosperity, Success, Health & Well Being ||</Typography>
                                 </Box>
                                 <Box marginTop='5%'>
-                                    <Button style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', fontWeight: 'bold', paddingLeft: '5%', paddingRight: '5%' }}>Shop Now</Button>
+                                    <NavLink to='/shops'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', fontWeight: 'bold', paddingLeft: '5%', paddingRight: '5%', textTransform: 'none' }}>Shop Now</Button>
+                                    </NavLink>
                                 </Box>
                             </Box>
-                            <Box position='absolute' top='25%' left='5%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
+                            <Box position='absolute' top='20%' left='5%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
                                 <Box>
-                                    <Typography style={{ fontSize: '16px', fontWeight: '500' }}>Natural Rudraksha</Typography>
+                                    <Typography style={{ fontSize: '10px', fontWeight: '500' }}>Natural Rudraksha</Typography>
                                 </Box>
                                 <Box marginLeft='5%'>
-                                    <Typography style={{ fontSize: '16px', color: 'white' }} fontStyle='italic'>Beeds & Malas</Typography>
+                                    <Typography style={{ fontSize: '10px', color: 'white' }} fontStyle='italic'>Beeds & Malas</Typography>
                                 </Box>
                                 <Box marginTop='5%'>
-                                    <Typography style={{ fontSize: '8px' }}>|| Rudraksha for peace, Progress, Prosperity, Success, Health & Well Being ||</Typography>
+                                    <Typography style={{ fontSize: '6px' }}>|| Rudraksha for peace, Progress, Prosperity, Success, Health & Well Being ||</Typography>
                                 </Box>
-                                <Box marginTop='5%'>
-                                    <Button style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', fontWeight: 'bold', paddingLeft: '1%', paddingRight: '1%' }}>Shop Now</Button>
+                                <Box marginTop='10%'>
+                                    <NavLink to='/shops'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', fontSize: '6px', paddingLeft: '1%', paddingRight: '1%', textTransform: 'none' }}>Shop Now</Button>
+                                    </NavLink>
                                 </Box>
                             </Box>
                         </Box>
@@ -369,9 +365,11 @@ function Item({ item }) {
                                     </Typography>
                                 </Box>
                                 <Box marginTop='10%'>
-                                    <Button style={{ borderRadius: '35px', backgroundColor: 'white', color: '#f24e1e', fontWeight: 'bold', paddingLeft: '5%', paddingRight: '5%' }}>
-                                        अभी ऑर्डर करे
-                                    </Button>
+                                    <NavLink to='/orders'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: 'white', color: '#f24e1e', fontWeight: 'bold', paddingLeft: '5%', paddingRight: '5%' }}>
+                                            अभी ऑर्डर करे
+                                        </Button>
+                                    </NavLink>
                                 </Box>
                             </Box>
                             <Box position='absolute' marginRight='50%' top='25%' left='10%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }}>
@@ -386,26 +384,30 @@ function Item({ item }) {
                                     </Typography>
                                 </Box>
                                 <Box marginTop='10%'>
-                                    <Button style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', }}>
-                                        अभी ऑर्डर करे
-                                    </Button>
+                                    <NavLink to='/orders'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', textTransform: 'none' }}>
+                                            अभी ऑर्डर करे
+                                        </Button>
+                                    </NavLink>
                                 </Box>
                             </Box>
                             <Box position='absolute' marginRight='50%' top='25%' left='5%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
                                 <Box bgcolor='#c6846e' borderRadius='5px'>
-                                    <Typography style={{ fontSize: '12px', fontWeight: 'bold', color: 'white', textAlign: 'center' }}>
+                                    <Typography style={{ fontSize: '10px', fontWeight: 'bold', color: 'white', textAlign: 'center' }}>
                                         घर बैठे पाये केदारनाथ धाम का प्रसाद
                                     </Typography>
                                 </Box>
-                                <Box marginLeft='5%' marginTop='3%'>
+                                <Box marginLeft='5%' marginTop='5%'>
                                     <Typography style={{ fontSize: '6px', color: 'black', textAlign: 'center' }}>
                                         GET THE PRASAD OF KEDARNATH TEMPLE IN UTTARAKHAND FROM BHAGWAN KA PRASAD AT HOME
                                     </Typography>
                                 </Box>
                                 <Box marginTop='10%'>
-                                    <Button style={{ borderRadius: '35px', backgroundColor: 'white', color: '#f24e1e', fontWeight: 'bold', paddingLeft: '5%', paddingRight: '5%' }}>
-                                        अभी ऑर्डर करे
-                                    </Button>
+                                    <NavLink to='/orders'>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: 'white', color: '#f24e1e', fontSize: '6px', paddingLeft: '5%', paddingRight: '5%', textTransform: 'none' }}>
+                                            अभी ऑर्डर करे
+                                        </Button>
+                                    </NavLink>
                                 </Box>
                             </Box>
                         </Box>
