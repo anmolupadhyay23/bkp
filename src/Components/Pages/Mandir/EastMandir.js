@@ -6,6 +6,7 @@ import MandirList from '../../Widgets/MandirWidgets/MandirList'
 import MandirEnd from '../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../Layout/NewNavbar'
+import MandirCarousel from '../../Widgets/MandirWidgets/MandirCarousel'
 
 var east_mandir = [
   {
@@ -140,8 +141,9 @@ const EastMandir = () => {
     <Box>
       <NewNavbar />
       <MandirIntro mandir_type={'East India Mandir'} mandir_image={"url('/images/mandir/east_mandir.png')"} />
-      <MandirList mandir={east_mandir} />
-      <MandirEnd />
+      {/* <MandirList mandir={east_mandir} /> */}
+      <MandirCarousel item={east_mandir} />
+      <MandirEnd curve={true} />
       <Footer />
     </Box>
   )

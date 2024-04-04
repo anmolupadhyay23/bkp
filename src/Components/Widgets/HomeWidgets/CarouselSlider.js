@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import './../../../Styles/Carousel.css'
 import { NavLink } from 'react-router-dom'
@@ -29,6 +29,7 @@ var slider = [
         "id": 3,
         "heading": "Bringing Sacred Blessings Home: Your Divine Connection Awaits Online",
         "subheading": "You're invited to connect with something sacred and special from the comfort of your home online. It's an opportunity to experience a divine connection.",
+
         "btnText": "Explore Services",
         "quote": "आत्मा की अन्वेषणा, शांति का सफर।",
         "img1": "/images/home/carousel_shiva.png",
@@ -286,7 +287,7 @@ function Item({ item }) {
                                 </Box>
                             </Box>
 
-                            <Box position='absolute' top='15%' left='5%' marginRight='50%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
+                            <Box position='absolute' top='10%' left='5%' marginRight='50%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
                                 <Box>
                                     <Typography style={{ fontSize: '10px', fontWeight: '500' }}>
                                         Bringing Sacred Blessings Home: Your Divine Connection Awaits Online
@@ -314,10 +315,10 @@ function Item({ item }) {
                             <img src='/images/home/carousel_2.png' width='100%' />
                             <Box position='absolute' top='25%' left='5%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
                                 <Box>
-                                    <Typography style={{ fontSize: '40px', fontWeight: '500' }}>Natural Rudraksha</Typography>
+                                    <Typography style={{ fontSize: '60px', fontWeight: '500' }}>Natural Rudraksha</Typography>
                                 </Box>
-                                <Box marginLeft='5%'>
-                                    <Typography style={{ fontSize: '40px', color: 'white' }} fontStyle='italic'>Beeds & Malas</Typography>
+                                <Box>
+                                    <Typography style={{ fontSize: '60px', color: 'white' }} fontStyle='italic'>Beeds & Malas</Typography>
                                 </Box>
                                 <Box marginTop='5%'>
                                     <Typography style={{ fontSize: '16px' }}>|| Rudraksha for peace, Progress, Prosperity, Success, Health & Well Being ||</Typography>

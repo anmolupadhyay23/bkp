@@ -11,6 +11,7 @@ import TourGuide from '../Widgets/HomeWidgets/TourGuide';
 import WellnessPractice from '../Widgets/HomeWidgets/WellnessPractice';
 import Footer from '../Widgets/HomeWidgets/Footer';
 import NewNavbar from '../Layout/NewNavbar';
+import Quotes from '../Widgets/HomeWidgets/Quotes';
 
 const HomePage = () => {
   return (
@@ -21,7 +22,8 @@ const HomePage = () => {
       <Searchbar />
       <Services />
       <Donate />
-      <QuotesSlider />
+      {/* <QuotesSlider /> */}
+      <Quotes />
       <NewsFeed />
       <TourGuide />
       <WellnessPractice />
