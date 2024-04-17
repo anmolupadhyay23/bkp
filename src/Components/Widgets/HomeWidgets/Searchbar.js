@@ -2,6 +2,7 @@ import React from 'react'
 import './../../../Styles/Searchbar.css'
 import { Box, Button, TextField, Grid, Paper, Typography, InputAdornment } from '@mui/material'
 import { Search } from '@mui/icons-material'
+import Images from '../../../Constants/constant'
 
 const Searchbar = () => {
     return (
@@ -10,7 +11,7 @@ const Searchbar = () => {
                 { /* For larger screens than md */ }
                 <Grid item md={6} display={{xs: 'none', sm: 'none', md: 'none', lg:'inline-flex'}}>
                     <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                        <img src='/images/home/search_image.png' alt='search' style={{ width: '90%', paddingLeft: '8%', paddingTop: '7%', paddingBottom: '7%' }} />
+                        <img src={Images.search_image} alt='search' style={{ width: '90%', paddingLeft: '8%', paddingTop: '7%', paddingBottom: '7%' }} />
                     </Paper>
                 </Grid>
                 <Grid item md={6} display={{xs: 'none', sm: 'none', md: 'none', lg: 'inline-flex'}} container justifyContent='center'>

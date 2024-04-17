@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Shanidev = () => {
     return (
@@ -11,7 +12,7 @@ const Shanidev = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/west/shani_dev.png'
+                 image= {Images.shanidev}
                   name='Shani Dev'
                   location=':Shingnapur , Ahmednagar District'
                   state=':Maharashtra'

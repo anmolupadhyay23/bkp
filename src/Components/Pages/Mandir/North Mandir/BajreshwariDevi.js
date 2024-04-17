@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const BajreshwariDevi = () => {
     return (
@@ -11,7 +12,7 @@ const BajreshwariDevi = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/north/bajreshwari_devi.png'
+                 image={Images.bajreshwari}
                   name='Shri Bajreshwari Devi Temple'
                   location=':Kangra District'
                   state=':himachal Pradesh'

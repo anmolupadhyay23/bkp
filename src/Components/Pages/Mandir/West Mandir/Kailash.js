@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Kailash = () => {
     return (
@@ -11,7 +12,7 @@ const Kailash = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/west/kailash.png'
+                 image={Images.kailash}
                   name='kailash Temple'
                   location=':Aurangabad'
                   state=':Maharashtra'

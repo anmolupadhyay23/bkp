@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Virupaksha = () => {
     return (
@@ -11,7 +12,7 @@ const Virupaksha = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/south/virupaksha.png'
+                 image={Images.virupaksha}
                   name='Virupaksha Temple'
                   location=':Hampi, Vijayanagara district'
                   state=':Karnataka'

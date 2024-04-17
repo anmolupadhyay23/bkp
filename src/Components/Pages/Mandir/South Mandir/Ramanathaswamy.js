@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Ramanathaswamy = () => {
     return (
@@ -11,7 +12,7 @@ const Ramanathaswamy = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/south/ramanathaswamy.png'
+                 image={Images.ramanathaswami}
                   name='Ramanathaswamy Temple'
                   location=':Rameswaram island'
                   state=':Tamil Nadu'

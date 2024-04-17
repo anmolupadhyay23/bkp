@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
+import Images from '../../../Constants/constant'
 
 const WellnessCard = () => {
     return (
@@ -7,7 +8,7 @@ const WellnessCard = () => {
             <Grid container>
                 <Grid item xs={1} />
                 <Grid item xs={4.5}>
-                    <Box sx={{ backgroundImage: "url('/images/wellness/wellness_card.png')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '10px', paddingLeft: '10%', paddingTop: '5%', paddingBottom: '5%' }}>
+                    <Box sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Fwellness_card.png?alt=media&token=ed72c179-1625-4dc8-8bf9-5c48b105b04a')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '10px', paddingLeft: '10%', paddingTop: '5%', paddingBottom: '5%' }}>
                         <Box display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}}>
                             <Box marginBottom='2%'>
                                 <Typography color='white' fontSize='32px' fontWeight='bold'>
@@ -19,7 +20,7 @@ const WellnessCard = () => {
                                     Yoga is a holistic practice that combines physical postures, breath control, meditation, and ethical principles to promote overall health and well-being, fostering harmony between body, mind, and spirit.
                                 </Typography>
                             </Box>
-                            <img src='/images/wellness/wellness_card_underline.png' width='50%' />
+                            <img src={Images.wellness_card_underline} width='50%' />
                         </Box>
                         <Box display={{xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none'}}>
                             <Box marginBottom='2%'>
@@ -32,7 +33,7 @@ const WellnessCard = () => {
                                     Yoga is a holistic practice that combines physical postures, breath control, meditation, and ethical principles to promote overall health and well-being, fostering harmony between body, mind, and spirit.
                                 </Typography>
                             </Box>
-                            <img src='/images/wellness/wellness_card_underline.png' width='50%' />
+                            <img src={Images.wellness_card_underline} width='50%' />
                         </Box>
                     </Box>
                 </Grid>
@@ -41,7 +42,7 @@ const WellnessCard = () => {
                 </Grid>
                 <Grid item xs={4.5}>
 
-                    <Box height='100%' sx={{ backgroundImage: "url('/images/wellness/wellness_card.png')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '10px', paddingLeft: '10%', paddingTop: '5%', paddingBottom: '5%' }}>
+                    <Box height='100%' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Fwellness_card.png?alt=media&token=ed72c179-1625-4dc8-8bf9-5c48b105b04a')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '10px', paddingLeft: '10%', paddingTop: '5%', paddingBottom: '5%' }}>
                         <Box display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}} >
                             <Box marginBottom='2%'>
                                 <Typography color='white' fontSize='32px' fontWeight='bold'>
@@ -53,7 +54,7 @@ const WellnessCard = () => {
                                     Meditation is a practice focused on calming the mind, enhancing self-awareness, and promoting inner peace.
                                 </Typography>
                             </Box>
-                            <img src='/images/wellness/wellness_card_underline.png' width='50%' />
+                            <img src={Images.wellness_card_underline} width='50%' />
                         </Box>
                         <Box display={{xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none'}} >
                             <Box marginBottom='2%'>
@@ -66,7 +67,7 @@ const WellnessCard = () => {
                                     Meditation is a practice focused on calming the mind, enhancing self-awareness, and promoting inner peace.
                                 </Typography>
                             </Box>
-                            <img src='/images/wellness/wellness_card_underline.png' width='50%' />
+                            <img src={Images.wellness_card_underline} width='50%' />
                         </Box>
                     </Box>
 

@@ -4,6 +4,7 @@ import MeditationintroImage from '../../../Widgets/meditationwidgets/meditationi
 import NewNavbar from '../../../Layout/NewNavbar'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import Meditationdescription from '../../../Widgets/meditationwidgets/meditationdescription'
+import Images from '../../../../Constants/constant'
 
 const Spiritualmeditation = () => {
    const items=["Choose a quiet and peaceful environment where you can sit comfortably without distractions.",
@@ -27,7 +28,7 @@ const Spiritualmeditation = () => {
             { display: { xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '12px', subtitleFontSize: '7px' }
         ]}
         title='Spiritual Meditation'
-        imageSrc='images/meditation/meditationintroimages/spiritual.png'
+        imageSrc={Images.spiritualmeditation}
 
         ></MeditationintroImage>
 

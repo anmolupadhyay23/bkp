@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const KalkaJi = () => {
     return (
@@ -11,7 +12,7 @@ const KalkaJi = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/north/kalkaji.png'
+                 image={Images.kalkaji}
                   name='Shri KalkaJi Temple'
                   location=': Nehru Place'
                   state=':Delhi'

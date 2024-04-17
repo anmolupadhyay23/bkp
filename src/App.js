@@ -68,11 +68,16 @@ import Spiritualmeditation from './Components/Pages/Meditation/meditations/spiri
 import Visualization from './Components/Pages/Meditation/meditations/visualization';
 import Focused from './Components/Pages/Meditation/meditations/focused';
 import WellnessPractice from './Components/Pages/Wellness/WellnessPractice';
+import Blog from './Components/Pages/Blogs/blogs';
 
 function App() {
   return (
     <>
       <Routes>
+
+        {/* blogs   */}
+        <Route path='/blogs' element={<Blog/>} />
+
         {/* Main */}
         <Route path='/' element={<HomePage />} />
 

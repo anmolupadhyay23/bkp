@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Trikonasana = () => {
@@ -19,7 +20,7 @@ const Trikonasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/trikonasana.png' 
+        <YogaintroImage imageSrc={Images.trikonasana1}
         title='Trikonasana'
         subtitle1='"Trikonasana, or Triangle Pose, stretches the sides of the  '
         subtitle2='body, strengthens the legs, and improves balance and '
@@ -68,12 +69,12 @@ Trikonasana, or Triangle Pose, is a foundational yoga posture that involves stan
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/trikonasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.trikonasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/trikonasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.trikonasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

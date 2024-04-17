@@ -1,5 +1,6 @@
 import { Box, Button, Rating, Typography } from '@mui/material'
 import React, { useState } from 'react'
+import Images from '../../../../Constants/constant'
 
 const ShopCard = () => {
 
@@ -10,7 +11,7 @@ const ShopCard = () => {
         <Box>
             <Box>
                 <Box>
-                    <img src='/images/shops/card/card_rudraksha.png' width='100%' style={{ filter: isImage }} onMouseOver={() => setIsImage('contrast(110%)')} onMouseOut={() => setIsImage('contrast(80%)')} />
+                    <img src={Images.card_rudraksha} width='100%' style={{ filter: isImage }} onMouseOver={() => setIsImage('contrast(110%)')} onMouseOut={() => setIsImage('contrast(80%)')} />
                 </Box>
                 <Box marginTop='3%' sx={{ boxShadow: '0px 4px 6px rgba(0,0,0,0.1)', borderRadius: '5px', borderTopLeftRadius: '0px', borderTopRightRadius: '0px' }}>
                     <Box marginLeft='10%' marginRight='10%'>

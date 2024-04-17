@@ -4,6 +4,7 @@ import MeditationintroImage from '../../../Widgets/meditationwidgets/meditationi
 import NewNavbar from '../../../Layout/NewNavbar'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import Meditationdescription from '../../../Widgets/meditationwidgets/meditationdescription'
+import Images from '../../../../Constants/constant'
 
 const Mantra = () => {
    const items=["Choose a quiet and comfortable place to sit where you won't be disturbed for about 15-20 minutes.",
@@ -26,7 +27,7 @@ const Mantra = () => {
             { display: { xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '12px', subtitleFontSize: '7px' }
         ]}
         title='Mantra Meditation'
-        imageSrc='images/meditation/meditationintroimages/mantra.png'
+        imageSrc={Images.mantra}
 
         ></MeditationintroImage>
 

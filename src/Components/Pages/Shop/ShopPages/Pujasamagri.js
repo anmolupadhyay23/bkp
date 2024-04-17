@@ -9,7 +9,7 @@ const PujaSamagri = () => {
         <NewNavbar/>
       <Box paddingTop='100px'></Box>
         <Box display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
-        <Box height='86vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('/images/shops/books/pujasamagri.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+        <Box height='86vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Fpujasamagri.png?alt=media&token=a65fad52-17fa-42f6-9bdb-80a995e0a1e8')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         <Box position='absolute' width='100%' height='100%' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
         <Typography color='white' fontSize='48px' style={{ fontWeight: 600 }}>Coming Soon</Typography>
         <Typography color='white' fontSize='20px' >This section of the website is currently under construction.
@@ -27,7 +27,7 @@ const PujaSamagri = () => {
     </Box>
 
     <Box display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-        <Box height='25vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('/images/shops/books/pujasamagri.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+        <Box height='25vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Fpujasamagri.png?alt=media&token=a65fad52-17fa-42f6-9bdb-80a995e0a1e8')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         <Box position='absolute' width='100%' height='100%' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
         <Typography color='white' fontSize='20px' fontweight='bold' style={{ fontWeight: 600 }}>Coming Soon</Typography>
         <Typography color='white' fontSize='12px' >This section of the website is currently under construction.

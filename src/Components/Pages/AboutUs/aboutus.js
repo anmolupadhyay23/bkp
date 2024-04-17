@@ -2,23 +2,26 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 import NewNavbar from '../../Layout/NewNavbar'
 import Footer from '../../Widgets/HomeWidgets/Footer'
+import ProgressiveImage from '../../../progressiveimage/progressiveimage'
+import Images from '../../../Constants/constant'
 
 const Aboutus = () => {
   return (
     <Box>
         <NewNavbar/>
         <Box paddingTop='100px'></Box>
-         <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}height='55vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('/images/aboutus/aboutus.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-        
+         <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}height='55vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Faboutus.png?alt=media&token=344e1270-9470-4aa3-89d5-c57c8b3bf8b8')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         </Box>
-        <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}height='17vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('/images/aboutus/aboutus.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+        <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}height='17vh' position='relative' bgcolor='rgba(255, 101, 5, 0.7)' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Faboutus.png?alt=media&token=344e1270-9470-4aa3-89d5-c57c8b3bf8b8')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         
         </Box>
         <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' }} position='absolute' top='30%' left='6%' width='45%'>
                         <Box>
                             <Typography fontSize='40px' fontWeight='bold' fontFamily='Times New Roman' color='white'>About Us</Typography>
                             <Typography fontSize='20px' color='white' fontFamily='Inter'>“Know more about us & our product”</Typography>
-                            <img src='images/aboutus/aboutustext.png' height='37%' width='34%'></img>
+                            <img src={Images.aboutustext} height='37%' width='34%'></img>
+
+                  
                            
                         </Box>
                     </Box>
@@ -27,7 +30,7 @@ const Aboutus = () => {
                         <Box>
                             <Typography fontSize='16px' fontWeight='bold' fontFamily='Times New Roman' color='white'>About Us</Typography>
                             <Typography fontSize='7px' color='white' fontFamily='Inter'>“Know more about us & our product”</Typography>
-                            <img src='images/aboutus/aboutustext.png' height='30%' width='40%'></img>
+                            <img src={Images.aboutustext} height='30%' width='40%'></img>
                            
                         </Box>
          </Box>
@@ -41,11 +44,11 @@ const Aboutus = () => {
                 <Typography display='hidden'></Typography>
             </Box>
             
-            <img src='images/aboutus/aboutusmission.png' width='100%' height='40%'></img>
+            <img src={Images.aboutusmission} width='100%' height='40%'></img>
             <Typography fontSize='32px' fontFamily='Inter' fontWeight='bold' paddingTop='60px'>Key Highlights</Typography>
-            <img src='images/aboutus/highlights.png' width='30%'></img>
+            <img src={Images.highlights} width='30%'></img>
 
-            <img src='images/aboutus/keyhighlights.png' width='100%' height='60%' style={{ marginTop: '100px', marginBottom:'80px' }} ></img>
+            <img src={Images.keyhighlights} width='100%' height='60%' style={{ marginTop: '100px', marginBottom:'80px' }} ></img>
           </Box>
 
 
@@ -56,11 +59,11 @@ const Aboutus = () => {
                 <Typography display='hidden'></Typography>
             </Box>
             
-            <img src='images/aboutus/aboutusmission.png' width='100%' height='60%'></img>
+            <img src={Images.aboutusmission} width='100%' height='60%'></img>
             <Typography fontSize='14px' fontFamily='Inter' fontWeight='bold' paddingTop='20px'>Key Highlights</Typography>
-            <img src='images/aboutus/highlights.png' width='30%'></img>
+            <img src={Images.highlights} width='30%'></img>
 
-            <img src='images/aboutus/keyhighlights.png' width='100%' height='60%' style={{ marginTop: '30px', marginBottom:'25px' }} ></img>
+            <img src={Images.keyhighlights} width='100%' height='60%' style={{ marginTop: '30px', marginBottom:'25px' }} ></img>
           </Box>
 
           <Footer/>

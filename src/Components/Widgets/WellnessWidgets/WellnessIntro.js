@@ -1,10 +1,11 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
+import Images from '../../../Constants/constant'
 
 const WellnessIntro = () => {
     return (
         <Box paddingTop='100px' position='relative'>
-            <img src='/images/wellness/wellness_banner.png' width='100%' />
+            <img src={Images.wellness_banner} width='100%' />
             <Box position='absolute' top='50%' left='10%' width='50%'>
 
                 <Box display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}}>
@@ -30,7 +31,7 @@ const WellnessIntro = () => {
                 </Box>
 
                 <Box>
-                    <img src='/images/wellness/wellness_underline.png' width='100%' />
+                    <img src={Images.wellness_underline} width='100%' />
                 </Box>
             </Box>
         </Box>

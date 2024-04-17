@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Mayurasana = () => {
@@ -15,7 +16,7 @@ const Mayurasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/mayurasana.png' 
+        <YogaintroImage imageSrc={Images.mayurasana1} 
         title='Mayurasana'
         subtitle1='“Mayurasana: Yoga pose balancing on hands, strengthens '
         subtitle2='arms, tones abs, and improves balance.”'
@@ -62,12 +63,12 @@ Mayurasana, or Peacock Pose, is an advanced yoga posture that strengthens the ar
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/mayurasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.mayurasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/mayurasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.mayurasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

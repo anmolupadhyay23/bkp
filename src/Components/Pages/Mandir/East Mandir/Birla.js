@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Birla = () => {
     return (
@@ -11,7 +12,7 @@ const Birla = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/east/birla.png'
+                 image={Images.birla}
                   name='Birla Mandir'
                   location=':Ashutosh Chowdhury Avenue, Ballygunge, Kolkata'
                   state=':West Bengal'

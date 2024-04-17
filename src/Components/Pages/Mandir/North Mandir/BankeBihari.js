@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const BankeBihari = () => {
     return (
@@ -11,7 +12,7 @@ const BankeBihari = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/north/banke_bihari_vrindavan.png'
+                 image={Images.bankebihari}
                   name='Sh Banke Bihari Prasad Vrindavan (Vrindavan, Uttar Pradesh)'
                   location='Vrindavan, Mathura'
                   state='Uttar Pradesh'

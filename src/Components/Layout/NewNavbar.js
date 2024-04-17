@@ -2,7 +2,7 @@ import { Avatar, Box, Button, Drawer, Grid, IconButton, Menu, Typography } from 
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './../../Styles/NewNavbar.css'
-import { MenuOutlined, Close } from '@mui/icons-material'
+import { MenuOutlined, Close, Person, Person2Outlined, Person2 } from '@mui/icons-material'
 import { useAuth } from '../../Context/authContext'
 
 const NewNavbar = () => {
@@ -143,7 +143,7 @@ const NewNavbar = () => {
                             </IconButton>
                         </NavLink>
                         <IconButton variant='text' className='navbox-btn' id='user-btn' onClick={handleUserbox} aria-controls={openUserbox ? 'userbox-menu' : undefined} aria-haspopup='true' aria-expanded={openUserbox ? 'true' : undefined} >
-                            <Avatar sx={{ width: 30, height: 30 }} src='/images/icons/profile.png' />
+                        <Person sx={{ width: 30, height: 30, border: '1px solid black' , borderRadius:'50%' }} />
                         </IconButton  >
                     </Box>
                     <Menu id='userbox-menu' anchorEl={userbox} open={openUserbox} MenuListProps={{ "aria-labelledby": 'user-btn', }} onClose={closeUserbox} className='menu' style={{ marginRight: '1%', marginLeft: '7%' }}>
@@ -294,7 +294,7 @@ const NewNavbar = () => {
 
                                 <Box>
                                     <Button variant='text' className='nav-btn'>
-                                        <NavLink to='/donate' className='nav-btn'>Donate</NavLink>
+                                        <NavLink to='/donationcomingsoon' className='nav-btn'>Donate</NavLink>
                                     </Button>
                                 </Box>
                                 <Box marginLeft='3%'>
@@ -317,7 +317,7 @@ const NewNavbar = () => {
                             <Box sx={{ width: 30, height: 30 }} component="img" alt="Cart" src="/images/icons/cart.png" />
                         </IconButton>
                         <IconButton variant='text' className='navbox-btn' id='user-btn' onClick={handleUserbox} aria-controls={openUserbox ? 'userbox-menu' : undefined} aria-haspopup='true' aria-expanded={openUserbox ? 'true' : undefined} >
-                            <Avatar sx={{ width: 30, height: 30 }} src='/images/icons/profile.png' />
+                        <Person sx={{ width: 30, height: 30, border: '1px solid black' , borderRadius:'50%' }} />
                         </IconButton  >
                     </Box>
                 </Grid>

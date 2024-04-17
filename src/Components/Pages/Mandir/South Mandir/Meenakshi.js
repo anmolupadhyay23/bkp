@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Meenakshi = () => {
     return (
@@ -11,7 +12,7 @@ const Meenakshi = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/south/meenakshi.png'
+                 image={Images.meenakshi}
                   name='Meenakshi Temple'
                   location=':Southern bank of the Vaigai River, Madurai,'
                   state=':Tamil Nadu'

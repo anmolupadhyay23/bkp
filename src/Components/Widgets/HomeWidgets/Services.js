@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Box, Button, Container, Grid, Paper, Typography } from '@mui/material'
 import { ArrowForward } from '@mui/icons-material'
 import { NavLink } from 'react-router-dom';
+import Images from '../../../Constants/constant';
 
 const Services = () => {
 
@@ -15,21 +16,21 @@ const Services = () => {
             { /* For larger screens than sm */}
             <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }} justifyContent='center' marginLeft='30%' marginRight='30%' marginTop='2%'>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginRight: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='13px' height='16px' />
+                    <img src={Images.services_sign} width='13px' height='16px' />
                 </Paper>
                 <Typography color='black' fontSize='24px' marginTop='1%'>Services</Typography>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginLeft: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='13px' height='16px' />
+                    <img src={Images.services_sign} width='13px' height='16px' />
                 </Paper>
             </Box>
             { /* For sm and smaller screens */}
             <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='30%' marginRight='30%' marginTop='3%'>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '0.8%', marginRight: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='11px' height='13px' />
+                    <img src={Images.services_sign} width='11px' height='13px' />
                 </Paper>
                 <Typography color='black' fontSize='18px' marginTop='1%'>Services</Typography>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '0.8%', marginLeft: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='11px' height='13px' />
+                    <img src={Images.services_sign} width='11px' height='13px' />
                 </Paper>
             </Box>
 
@@ -59,13 +60,13 @@ const Services = () => {
             { /* For larger screens than md */}
             <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }} justifyContent='center' marginLeft='45%' marginRight='45%'>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '10%', marginRight: '1.5%', border: 'none' }}>
-                    <img src='/images/home/om.png' width='86px' height='81px' />
+                    <img src={Images.om} width='86px' height='81px' />
                 </Paper>
             </Box>
             { /* For sm and smaller screens */}
             <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='45%' marginRight='45%' marginTop='3%'>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '10%', marginRight: '1.5%', border: 'none' }}>
-                    <img src='/images/home/om.png' width='46px' height='41px' />
+                    <img src={Images.om} width='46px' height='41px' />
                 </Paper>
             </Box>
 
@@ -76,7 +77,7 @@ const Services = () => {
                         <Box>
                             <NavLink to='/service/puja'>
                                 <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                    <img src='/images/home/services_puja.png' style={{ filter: isPuja }} width='100%' onMouseOver={() => setIsPuja('brightness(0.4)')} onMouseOut={() => setIsPuja('brightness(1)')} />
+                                    <img src={Images.services_puja1} style={{ filter: isPuja }} width='100%' onMouseOver={() => setIsPuja('brightness(0.4)')} onMouseOut={() => setIsPuja('brightness(1)')} />
                                 </Paper>
                             </NavLink>
                         </Box>
@@ -91,7 +92,7 @@ const Services = () => {
                         <Box>
                             <NavLink to='/service/prasad'>
                                 <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                    <img src='/images/home/services_prasad.png' style={{ filter: isPrasad }} width='100%' onMouseOver={() => setIsPrasad('brightness(0.4)')} onMouseOut={() => setIsPrasad('brightness(1)')} />
+                                    <img src={Images.services_prasad1} style={{ filter: isPrasad }} width='100%' onMouseOver={() => setIsPrasad('brightness(0.4)')} onMouseOut={() => setIsPrasad('brightness(1)')} />
                                 </Paper>
                             </NavLink>
                         </Box>
@@ -106,7 +107,7 @@ const Services = () => {
                         <Box>
                             <NavLink to='/service/astrology'>
                                 <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                    <img src='/images/home/services_astrology.png' style={{ filter: isAstrology }} width='100%' onMouseOver={() => setIsAstrology('brightness(0.4)')} onMouseOut={() => setIsAstrology('brightness(1)')} />
+                                    <img src={Images.services_astrology1} style={{ filter: isAstrology }} width='100%' onMouseOver={() => setIsAstrology('brightness(0.4)')} onMouseOut={() => setIsAstrology('brightness(1)')} />
                                 </Paper>
                             </NavLink>
                         </Box>
@@ -119,47 +120,49 @@ const Services = () => {
 
                 { /* For sm and smaller screens */}
                 <Grid item md={3} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none' }} marginRight='5%' marginLeft='5%' marginBottom='8%' marginTop='5%' >
-                    <Box>
+                    <Box position='relative'>
                         <Box>
                             <NavLink to='/service/puja'>
                                 <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                    <img src='/images/home/services_puja.png' width='100%' />
+                                    <img src='/images/home/services_puja1.png' width='100%' />
                                 </Paper>
                             </NavLink>
                         </Box>
-                        <Box display='flex' justifyContent='center' >
-                            <Typography color='black' fontSize='25px' marginTop='2.5%' textAlign='center'>Puja</Typography>
-                            <Typography color='black' fontSize='20px' marginTop='3.5%' textAlign='center'>(पूजा)</Typography>
+
+                        <Box position='absolute' right='0%' top='10%' sx={{backgroundColor:'#f8f7f4', borderTopLeftRadius: '12px', borderBottomLeftRadius:'12px', paddingLeft:'15px', paddingRight:'7px'}}>
+                            <Typography fontSize='16px' color='#F24E1E'>Puja(पूजा)</Typography>
                         </Box>
+                        
                     </Box>
                 </Grid>
                 <Grid item md={3} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none' }} marginRight='5%' marginLeft='5%' marginBottom='8%' >
-                    <Box>
+                    <Box position='relative'>
                         <Box>
                             <NavLink to='/service/puja'>
                                 <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                    <img src='/images/home/services_prasad.png' width='100%' />
+                                    <img src='/images/home/services_prasad1.png' width='100%' />
                                 </Paper>
                             </NavLink>
+                            <Box position='absolute' left='0%' top='10%' sx={{backgroundColor:'#f8f7f4', borderTopRightRadius: '12px', borderBottomRightRadius:'12px', paddingRight:'15px', paddingLeft:'7px'}}>
+                            <Typography fontSize='16px' color='#F24E1E'>Prasad(प्रसाद)</Typography>
                         </Box>
-                        <Box display='flex' justifyContent='center' >
-                            <Typography color='black' fontSize='25px' marginTop='2.5%' textAlign='center'>Prasad</Typography>
-                            <Typography color='black' fontSize='20px' marginTop='3.5%' textAlign='center'>(प्रसाद)</Typography>
                         </Box>
+                        
                     </Box>
                 </Grid>
                 <Grid item md={3} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none' }} marginRight='5%' marginLeft='5%' marginBottom='8%' >
-                    <Box>
+                    <Box position='relative'>
                         <Box>
                             <NavLink to='/service/puja'>
                                 <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                    <img src='/images/home/services_astrology.png' width='100%' />
+                                    <img src='/images/home/services_astrology1.png' width='100%' />
                                 </Paper>
                             </NavLink>
+
+                            
                         </Box>
-                        <Box display='flex' justifyContent='center' >
-                            <Typography color='black' fontSize='25px' marginTop='2.5%' textAlign='center'>Astrology</Typography>
-                            <Typography color='black' fontSize='20px' marginTop='3.5%' textAlign='center'>(ज्योतिष)</Typography>
+                        <Box position='absolute' right='0%' top='10%' sx={{backgroundColor:'#f8f7f4', borderTopLeftRadius: '12px', borderBottomLeftRadius:'12px', paddingLeft:'15px', paddingRight:'7px'}}>
+                            <Typography fontSize='16px' color='#F24E1E'>Astrology(ज्योतिष)</Typography>
                         </Box>
                     </Box>
                 </Grid>

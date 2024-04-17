@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Shalabhasana = () => {
@@ -17,7 +18,7 @@ const Shalabhasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/shalabhasana.png' 
+        <YogaintroImage imageSrc={Images.shalabhasana1}
         title='Shalabhasana'
         subtitle1='“Shalabhasana, or Locust Pose, strengthens the back '
         subtitle2='muscles by lifting the legs and chest off the ground.”'
@@ -65,12 +66,12 @@ Shalabhasana, known as Locust Pose in yoga, involves lifting the legs and chest 
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/shalabhasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.shalabhasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/shalabhasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.shalabhasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

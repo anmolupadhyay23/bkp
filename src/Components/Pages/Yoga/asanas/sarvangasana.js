@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Sarvangasana = () => {
@@ -17,7 +18,7 @@ const Sarvangasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/sarvangasana.png' 
+        <YogaintroImage imageSrc={Images.sarvangasana1}
         title='Sarvangasana'
         subtitle1='“Sarvangasana is a yoga pose where you balance on'
         subtitle2='your shoulders, known as the "shoulder stand."'
@@ -65,12 +66,12 @@ const Sarvangasana = () => {
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/sarvangasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.sarvangasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/sarvangasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.sarvangasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

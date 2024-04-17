@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Dwarkadhish = () => {
     return (
@@ -11,7 +12,7 @@ const Dwarkadhish = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/west/dwarkadhish.png'
+                 image={Images.dwarkadhish}
                   name='Dwarkadhish Temple'
                   location=':Devbhoomi Dwarka'
                   state=':Gujarat'

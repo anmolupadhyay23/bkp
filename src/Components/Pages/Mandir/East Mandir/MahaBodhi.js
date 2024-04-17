@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Mahabodhi = () => {
     return (
@@ -11,7 +12,7 @@ const Mahabodhi = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/east/mahabodhi.png'
+                 image={Images.mahabodhi}
                   name='Mahabodhi Temple'
                   location=':Bodh Gaya'
                   state=':Bihar'

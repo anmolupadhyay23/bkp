@@ -24,7 +24,7 @@ const HomePage = () => {
       <Donate />
       {/* <QuotesSlider /> */}
       <Quotes />
-      <NewsFeed />
+      {/* <NewsFeed /> */}
       <TourGuide />
       <WellnessPractice />
       <Footer />

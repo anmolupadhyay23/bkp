@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Dhanurasana = () => {
@@ -17,7 +18,7 @@ const Dhanurasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/dhanurasana.png' 
+        <YogaintroImage imageSrc={Images.dhanurasana1} 
         title='Dhanurasana'
         subtitle1='“Dhanurasana, Bow Pose, involves lying on the stomach '
         subtitle2='and lifting the chest and legs to stretch the front and '
@@ -66,12 +67,12 @@ Dhanurasana, or Bow Pose, is a yoga posture that involves lying on the stomach a
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/dhanurasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.dhanurasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/dhanurasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.dhanurasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

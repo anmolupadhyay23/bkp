@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const VaishnoDevi = () => {
     return (
@@ -11,7 +12,7 @@ const VaishnoDevi = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/north/vaishno_devi.png'
+                 image={Images.vaishnodevi}
                   name='Mata Vaishno Devi Temle'
                   location=':Katra town, Reasi district'
                   state=':Jammu & Kashmir'

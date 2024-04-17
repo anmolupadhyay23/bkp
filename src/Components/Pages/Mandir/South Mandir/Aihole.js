@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Aihole = () => {
     return (
@@ -11,7 +12,7 @@ const Aihole = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/south/aihole_pattadakal.png'
+                 image={Images.aihole}
                   name='Aihole and Pattadakal'
                   location=':Bagalkot district'
                   state=':Karnataka'

@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const JwalaJi = () => {
     return (
@@ -11,7 +12,7 @@ const JwalaJi = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/north/jwala_ji.png'
+                 image={Images.jwalaji}
                   name='Maa Jwala Ji'
                   location=':Jwalamukhi Town, Kangra District'
                   state=':Himachal Pradesh'

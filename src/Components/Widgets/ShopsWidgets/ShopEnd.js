@@ -2,6 +2,7 @@ import { Box, Button, Grid, Paper, Rating, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import Footer from './../HomeWidgets/Footer'
 import { NavLink } from 'react-router-dom'
+import Images from '../../../Constants/constant'
 
 const ShopEnd = () => {
     return (
@@ -35,7 +36,7 @@ const ShopCard = () => {
         <Box>
             <NavLink to='/shop-buddha' style={{ textDecoration: 'none' }}>
                 <Box position='relative'>
-                    <img src='/images/shops/shop_buddha.png' width='100%' />
+                    <img src={Images.shops_buddha} width='100%' />
                     <Box display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
                         <NavLink to='/buy-now' style={{ textDecoration: 'none' }}>
                             <Button style={{ position: 'absolute', left: '10%', width: '80%', bottom: '30%', backgroundColor: isBuy ? 'transparent' : 'rgba(242, 78, 30, 0.7)', border: isBuy ? '2px solid #f24e1e' : 'none', color: 'white', fontWeight: '500', textTransform: 'none' }} onMouseOver={() => setIsBuy(true)} onMouseOut={() => setIsBuy(false)}>

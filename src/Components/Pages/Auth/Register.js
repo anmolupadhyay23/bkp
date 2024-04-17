@@ -54,14 +54,14 @@ const Register = () => {
     <Box>
       {/* For lg and xl */}
       <Grid container display={{ xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}>
-        <Grid item md={6} height='100vh' sx={{ backgroundImage: "url('/images/auth/login_background.png')", backgroundSize: 'cover' }}>
-          <Box height='100%' sx={{ backgroundImage: "url('/images/auth/register_image.png')", backgroundSize: 'cover', }}>
+        <Grid item md={6} height='100vh' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Flogin_background.png?alt=media&token=2b23efda-2d55-4126-9c9f-d5f20d0378e4')", backgroundSize: 'cover' }}>
+          <Box height='100%' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Fregister_image.png?alt=media&token=2e440bf4-329b-40d2-86cb-fbc5b8ec3c4c')", backgroundSize: 'cover', }}>
             <Box marginLeft='7%' marginRight='7%' border='1px solid transparent'>
               <Typography color='white' fontSize='32px' fontWeight='bold' marginTop='25%'>"Embark on a Spiritual Journey: Sign Up for Exclusive Online Prasad and Puja Services!"</Typography>
             </Box>
           </Box>
         </Grid>
-        <Grid item md={6} sx={{ backgroundImage: "url('/images/auth/login_background.png')", backgroundSize: 'cover' }}>
+        <Grid item md={6} sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Flogin_background.png?alt=media&token=2b23efda-2d55-4126-9c9f-d5f20d0378e4')", backgroundSize: 'cover' }}>
           <Box display='flex' alignItems='center' marginLeft='5%' marginTop='1%'>
             <Box sx={{ width: 58, height: 62 }} component="img" alt="Cart" src="/images/logo.png" />
             <Typography className='nav-logo-text'>भगवान का प्रसाद</Typography>
@@ -116,7 +116,7 @@ const Register = () => {
 
       {/* For xs and sm */}
       <Grid container display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-        <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('/images/auth/login_background.png')", backgroundSize: 'cover' }}>
+        <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Flogin_background.png?alt=media&token=2b23efda-2d55-4126-9c9f-d5f20d0378e4')", backgroundSize: 'cover' }}>
           <Box display='flex' alignItems='center' marginLeft='7%' paddingTop='7%'>
             <Box sx={{ width: 58, height: 62 }} component="img" alt="Cart" src="/images/logo.png" />
             <Typography className='nav-logo-text'>भगवान का प्रसाद</Typography>
@@ -164,7 +164,7 @@ const Register = () => {
 
       {/* For md */}
       <Grid container display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }}>
-        <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('/images/auth/login_background.png')", backgroundSize: 'cover' }}>
+        <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Flogin_background.png?alt=media&token=2b23efda-2d55-4126-9c9f-d5f20d0378e4')", backgroundSize: 'cover' }}>
           <Box display='flex' alignItems='center' marginLeft='7%' paddingTop='7%'>
             <Box sx={{ width: 58, height: 62 }} component="img" alt="Cart" src="/images/logo.png" />
             <Typography className='nav-logo-text'>भगवान का प्रसाद</Typography>

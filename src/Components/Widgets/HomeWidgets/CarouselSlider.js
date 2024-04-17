@@ -3,6 +3,8 @@ import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import './../../../Styles/Carousel.css'
 import { NavLink } from 'react-router-dom'
+import Images from '../../../Constants/constant'
+
 
 var slider = [
     {
@@ -249,7 +251,7 @@ function Item({ item }) {
                 <Grid container borderRadius='15px'>
                     <Grid item xs={12} >
                         <Box position='relative'>
-                            <img src='/images/home/carousel_1.png' width='100%' />
+                            <img src={Images.carousel_1} width='100%' />
 
                             <Box position='absolute' top='15%' left='3%' marginRight='50%' display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }}>
                                 <Box>
@@ -287,21 +289,29 @@ function Item({ item }) {
                                 </Box>
                             </Box>
 
-                            <Box position='absolute' top='10%' left='5%' marginRight='50%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-                                <Box>
-                                    <Typography style={{ fontSize: '10px', fontWeight: '500' }}>
-                                        Bringing Sacred Blessings Home: Your Divine Connection Awaits Online
+                            <Box position='absolute' top='13%' left='5%' marginRight='50%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
+                                <Box >
+                                    <Typography style={{ fontSize: '12px', fontWeight: '500' }}>
+                                        Bringing Sacred Blessings Home:
+                                    </Typography>
+                                    <Typography style={{ fontSize: '12px', fontWeight: '500' }}>
+                                        Your Divine Connection
+                                    </Typography>
+                                    <Typography style={{ fontSize: '12px', fontWeight: '500' }}>
+                                        Awaits online
                                     </Typography>
                                 </Box>
-                                <Box marginTop='5%'>
-                                    <Typography style={{ fontSize: '6px' }}>
-                                        You're invited to connect with something sacred and special from the comfort of your home online. It's an opportunity to experience a divine connection.
-                                    </Typography>
-                                </Box>
+                                
                                 <Box marginTop='10%'>
                                     <NavLink to='/our-services'>
-                                        <Button style={{ borderRadius: '35px', backgroundColor: '#f24e1e', color: 'white', paddingLeft: '3%', paddingRight: '3%', textTransform: 'none', fontSize: '6px' }}>Explore Services</Button>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: '#f24e1e', color: 'white', paddingLeft: '5%', paddingRight: '5%', textTransform: 'none', fontSize: '8px' }}>EXPLORE SERVICES</Button>
                                     </NavLink>
+                                </Box>
+
+                                <Box marginTop='7%' display='flex' justifyContent='left' alignItems='center' >
+                                    <img src='/images/home/slidericon.png' height='1.5%' width='3%'></img>
+                                    <Typography style={{fontSize:'8px ' , fontWeight:'800', marginLeft:'2%', marginRight:'2%'}}>"आत्मा की अन्वेषणा, शांति का सफर।"</Typography>
+                                    <img src='/images/home/slidericon.png' height='1.5%' width='3%'></img>
                                 </Box>
                             </Box>
                         </Box>
@@ -312,7 +322,8 @@ function Item({ item }) {
                 <Grid container borderRadius='15px'>
                     <Grid item xs={12} >
                         <Box position='relative'>
-                            <img src='/images/home/carousel_2.png' width='100%' />
+                            {/* <img src='/images/home/carousel_2.png' width='100%' /> */}
+                            <img src={Images.carousel_2} width='100%' />
                             <Box position='absolute' top='25%' left='5%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
                                 <Box>
                                     <Typography style={{ fontSize: '60px', fontWeight: '500' }}>Natural Rudraksha</Typography>
@@ -331,17 +342,18 @@ function Item({ item }) {
                             </Box>
                             <Box position='absolute' top='20%' left='5%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
                                 <Box>
-                                    <Typography style={{ fontSize: '10px', fontWeight: '500' }}>Natural Rudraksha</Typography>
+                                    <Typography style={{ fontSize: '14px', fontWeight: '500' }}>Natural Rudraksha</Typography>
                                 </Box>
                                 <Box marginLeft='5%'>
-                                    <Typography style={{ fontSize: '10px', color: 'white' }} fontStyle='italic'>Beeds & Malas</Typography>
+                                    <Typography style={{ fontSize: '14px', color: 'white' }} fontStyle='italic'>Beeds & Malas</Typography>
                                 </Box>
-                                <Box marginTop='5%'>
-                                    <Typography style={{ fontSize: '6px' }}>|| Rudraksha for peace, Progress, Prosperity, Success, Health & Well Being ||</Typography>
+                                <Box marginTop='5%' display='block'>
+                                    <Typography style={{ fontSize: '10px' , color: 'rgba(255,255,255,0.7)'}}>|| Rudraksha for peace, Progress, </Typography>
+                                    <Typography style={{ fontSize: '10px' , color: 'rgba(255,255,255,0.7)'}}>Prosperity, Success, Health & Well Being ||</Typography>
                                 </Box>
                                 <Box marginTop='10%'>
                                     <NavLink to='/shops'>
-                                        <Button style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', fontSize: '6px', paddingLeft: '1%', paddingRight: '1%', textTransform: 'none' }}>Shop Now</Button>
+                                        <Button sx={{p:0}} style={{ borderRadius: '35px', backgroundColor: '#d7d7d9', color: 'black', fontSize: '8px', paddingLeft: '1%', paddingRight: '1%',paddingTop:'1%',paddingBottom:'1%', textTransform: 'none' }}>Shop Now</Button>
                                     </NavLink>
                                 </Box>
                             </Box>
@@ -353,7 +365,8 @@ function Item({ item }) {
                 <Grid container borderRadius='15px'>
                     <Grid item xs={12} >
                         <Box position='relative'>
-                            <img src='/images/home/carousel_3.png' width='100%' />
+                            {/* <img src='/images/home/carousel_3.png' width='100%' /> */}
+                            <img src={Images.carousel_3} width='100%' />
                             <Box position='absolute' marginRight='50%' top='30%' left='5%' display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }}>
                                 <Box bgcolor='#c6846e' borderRadius='5px' width='80%' paddingTop='2%' paddingBottom='2%'>
                                     <Typography style={{ fontSize: '28px', fontWeight: 'bold', color: 'white', textAlign: 'center' }}>
@@ -367,7 +380,7 @@ function Item({ item }) {
                                 </Box>
                                 <Box marginTop='10%'>
                                     <NavLink to='/orders'>
-                                        <Button style={{ borderRadius: '35px', backgroundColor: 'white', color: '#f24e1e', fontWeight: 'bold', paddingLeft: '5%', paddingRight: '5%' }}>
+                                        <Button style={{ borderRadius: '35px', backgroundColor: 'white', color: '#f24e1e',fontSize:'8px', fontWeight: 'bold', paddingLeft: '5%', paddingRight: '5%' }}>
                                             अभी ऑर्डर करे
                                         </Button>
                                     </NavLink>

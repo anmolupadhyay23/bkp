@@ -1,6 +1,7 @@
 import { Box, Button, Paper, Typography, LinearProgress, Grid } from '@mui/material'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import Images from '../../../Constants/constant';
 
 const Donate = () => {
 
@@ -17,22 +18,22 @@ const Donate = () => {
         //     { /* For larger screens than md */}
         //     <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }} justifyContent='center' marginLeft='30%' marginRight='30%'>
         //         <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginRight: '1.5%', border: 'none' }}>
-        //             <img src='/images/home/donate_sign.png' width='39px' height='39px' />
+        //             <img src={Images.donate_sign} width='39px' height='39px' />
         //         </Paper>
         //         <Typography color='white' fontSize='30px'>Donate Us To Help</Typography>
         //         <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginLeft: '1.5%', border: 'none' }}>
-        //             <img src='/images/home/donate_sign.png' width='39px' height='39px' />
+        //             <img src={Images.donate_sign} width='39px' height='39px' />
         //         </Paper>
         //     </Box>
 
         //     { /* For md and smaller screens */}
         //     <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='30%' marginRight='30%'>
         //         <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginRight: '1.5%', border: 'none' }}>
-        //             <img src='/images/home/donate_sign.png' width='15px' height='15px' />
+        //             <img src={Images.donate_sign} width='15px' height='15px' />
         //         </Paper>
         //         <Typography color='white' fontSize='12px' marginTop='4%'>Donate Us To Help</Typography>
         //         <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginLeft: '1.5%', border: 'none' }}>
-        //             <img src='/images/home/donate_sign.png' width='15px' height='15px' />
+        //             <img src={Images.donate_sign} width='15px' height='15px' />
         //         </Paper>
         //     </Box>
 
@@ -157,13 +158,13 @@ const Donate = () => {
         //     { /* For larger screens than sm */}
         //     <Box display={{xs: 'none', sm: 'none', md: 'block'}}>
         //         <Paper variant='outlined' style={{ background: 'transparent', borderRadius: '20px',display: 'flex', justifyContent: 'flex-end', marginRight: '3%', marginTop: '2%', marginLeft: '85%', paddingBottom: '2%', border: 'none' }}>
-        //             <img src='/images/home/donate_sign.png' style={{ maxWidth: '50%', }} />
+        //             <img src={Images.donate_sign} style={{ maxWidth: '50%', }} />
         //         </Paper>
         //     </Box>
         //     { /* For sm and smaller screens */}
         //     <Box display={{xs: 'block', sm: 'block', md: 'none'}}>
         //         <Paper variant='outlined' style={{ background: 'transparent', borderRadius: '20px',display: 'flex', justifyContent: 'flex-end', marginRight: '10%', marginLeft: '70%', paddingBottom: '3%', border: 'none' }}>
-        //             <img src='/images/home/donate_sign.png' style={{ maxWidth: '50%', }} />
+        //             <img src={Images.donate_sign} style={{ maxWidth: '50%', }} />
         //         </Paper>
         //     </Box>
         // </Box>
@@ -172,17 +173,17 @@ const Donate = () => {
                 <Grid item xs={12} marginTop='2%' marginBottom='3%'>
                     <Box display='flex' justifyContent='center' alignItems='center'>
                         <Box width='100%' justifyContent='center' gap='1%' display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}>
-                            <img src='/images/home/donate_sign.png' width='39px' height='39px' />
-                            <Typography color='white' fontSize='30px'>Donate Us To Help</Typography>
-                            <img src='/images/home/donate_sign.png' width='39px' height='39px' />
+                            <img src={Images.donate_sign} width='39px' height='39px' />
+                        <Typography color='white' fontSize='30px' style={{fontFamily:'ABeeZee'}}>Donate Us To Help</Typography>
+                            <img src={Images.donate_sign} width='39px' height='39px' />
                         </Box>
-                        <Box width='100%' justifyContent='center' gap='1%' display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}>
-                            <img src='/images/home/donate_sign.png' width='19px' height='19px' />
-                            <Typography color='white' fontSize='15px'>Donate Us To Help</Typography>
-                            <img src='/images/home/donate_sign.png' width='19px' height='19px' />
+                        <Box width='100%' justifyContent='center' gap='1%' alignItems='center' display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }}>
+                            <img src={Images.donate_sign} width='10px' height='10px' />
+                            <Typography color='white' fontSize='16px' style={{fontFamily:'ABeeZee'}}>Donate Us To Help</Typography>
+                            <img src={Images.donate_sign} width='10px' height='10px' />
                         </Box>
                     </Box>
-                    <Box sx={{ width: '10%', border: 'none', borderTop: '5px solid white' }} mx='auto' />
+                    <Box sx={{ width: '30%', border: 'none', borderTop: '2px solid white' }} mx='auto' />
                 </Grid>
 
                 <Box display='flex'>
@@ -208,7 +209,7 @@ const Donate = () => {
                                 </Typography>
                             </Box>
                             <Box marginBottom='3%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-                                <Typography fontSize='12px' color='white'>
+                                <Typography fontSize='16px' color='white'>
                                     "Elevate lives, spark change:
                                     <span style={{ color: '#f24e1e' }}>
                                         ‎ Donate today
@@ -217,17 +218,17 @@ const Donate = () => {
                                 </Typography>
                             </Box>
                             <Box marginBottom='5%' display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' }}>
-                                <Typography fontSize='14px' color='white'>
+                                <Typography fontSize='16px' color='rgba(255,255,255,0.6)' style={{fontFamily:'inter'}}>
                                     Your donation matters! Help us make a difference in the lives of those we serve. Join us in our mission today. Thank you for your support!
                                 </Typography>
                             </Box>
                             <Box marginBottom='5%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }}>
-                                <Typography fontSize='12px' color='white'>
+                                <Typography fontSize='12px' color='rgba(255,255,255,0.6)'>
                                     Your donation matters! Help us make a difference in the lives of those we serve. Join us in our mission today. Thank you for your support!
                                 </Typography>
                             </Box>
                             <Box marginBottom='5%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-                                <Typography fontSize='6px' color='white'>
+                                <Typography fontSize='8px' color='rgba(255,255,255,0.6)' style={{fontFamily:'poppins'}}>
                                     Your donation matters! Help us make a difference in the lives of those we serve. Join us in our mission today. Thank you for your support!
                                 </Typography>
                             </Box>
@@ -241,15 +242,15 @@ const Donate = () => {
                             </Box>
                             <Box display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }} marginBottom='5%'>
                                 <NavLink to='/donationcomingsoon'>
-                                    <Button style={{ backgroundColor: '#f24e1e', color: 'white', fontWeight: '500', textTransform: 'none', borderRadius: '20px', paddingLeft: '1%', paddingRight: '1%', fontSize: '6px' }}>
+                                    <Button style={{ backgroundColor: '#f24e1e', color: 'white', fontWeight: '200', textTransform: 'none', marginTop:'14px', borderRadius: '20px', paddingLeft: '10%', paddingRight: '10%', fontSize: '9px' }}>
                                         Donate Now
                                     </Button>
                                 </NavLink>
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={5} marginBottom='2%'>
-                        <img src='/images/home/donate_new.png' width='100%' />
+                    <Grid item xs={6} marginBottom='2%'>
+                        <img src={Images.donate_new} width='100%' />
                     </Grid>
                 </Box>
             </Grid>

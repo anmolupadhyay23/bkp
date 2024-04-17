@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Box, Grid, Typography, Paper, Avatar, Button } from '@mui/material'
 import { ArrowForward } from '@mui/icons-material'
 import { NavLink } from 'react-router-dom'
+import Images from '../../../Constants/constant';
 
 const WellnessPractice = () => {
 
@@ -15,7 +16,7 @@ const WellnessPractice = () => {
             </Box>
             { /* For sm and smaller screens */}
             <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='30%' marginRight='30%' paddingTop='3%'>
-                <Typography color='#f8f7f4' fontSize='15px' marginTop='2.5%' fontWeight='500' textAlign='center'>Wellness Practice</Typography>
+                <Typography color='#f8f7f4' fontSize='20px' marginTop='2.5%' fontWeight='500' textAlign='center' style={{fontFamily:'ABeeZee'}}>Wellness Practice</Typography>
             </Box>
 
             { /* For larger screens than sm */}
@@ -29,7 +30,7 @@ const WellnessPractice = () => {
                     <Box>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                <img src='/images/home/wellness_yoga_1.png' width='100%' />
+                                <img src={Images.wellness_yoga_1} width='100%' />
                             </Paper>
                         </Box>
                     </Box>
@@ -80,7 +81,7 @@ const WellnessPractice = () => {
                     <Box>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                <img src='/images/home/wellness_yoga_2.png' width='100%' />
+                                <img src={Images.wellness_yoga_2} width='100%' />
                             </Paper>
                         </Box>
                     </Box>
@@ -92,7 +93,7 @@ const WellnessPractice = () => {
                     <Box>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                <img src='/images/home/wellness_yoga_1.png' width='100%' />
+                                <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/home/vvquspmaujtrisgg9mqd' width='100%' />
                             </Paper>
                         </Box>
                     </Box>
@@ -100,9 +101,9 @@ const WellnessPractice = () => {
                 <Grid item md={3} marginLeft='5%' marginRight='5%' marginTop='3%'>
                     <Box>
                         <Box>
-                            <Typography color='white' fontSize='12px' fontWeight='500' marginBottom='2%'>IMPROVE PHYSICAL HEALTH</Typography>
-                            <Typography color='black' fontSize='16px' marginBottom='3%'>Experience, Balance, Strength, and Serenity</Typography>
-                            <Typography color='black' fontSize='12px'>Our classes are designed to challenge and inspire you while ensuring a safe and supportive atmosphere for all.</Typography>
+                            <Typography color='white' fontSize='16px' style={{fontFamily:'ABeeZee'}} fontWeight='500' marginBottom='2%'>IMPROVE PHYSICAL HEALTH</Typography>
+                            <Typography color='black' fontSize='14px' style={{fontFamily:'ABeeZee'}} marginBottom='3%'>Experience, Balance, Strength, and Serenity</Typography>
+                            <Typography color='black' fontSize='13px' style={{fontFamily:'ABeeZee'}}>Our classes are designed to challenge and inspire you while ensuring a safe and supportive atmosphere for all.</Typography>
                             <Box marginTop='3%'>
                                 <Box display='flex' alignItems='center' marginLeft='2%'>
                                     <Avatar sx={{ backgroundColor: '#000', color: '#000', width: '5px', height: '5px', marginRight: '2%' }}></Avatar>
@@ -125,7 +126,7 @@ const WellnessPractice = () => {
                     <Box>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                <img src='/images/home/wellness_yoga_2.png' width='100%' />
+                                <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/home/q596h8gcrolhxesyfemh' width='100%' />
                             </Paper>
                         </Box>
                     </Box>
@@ -133,9 +134,9 @@ const WellnessPractice = () => {
                 <Grid item md={3} marginLeft='5%' marginRight='5%' marginTop='3%'>
                     <Box>
                         <Box>
-                            <Typography color='white' fontSize='12px' fontWeight='500' marginBottom='2%'>MENTAL WELL-BEING</Typography>
-                            <Typography color='black' fontSize='16px' marginBottom='3%'>Find Harmony in Body and Mind</Typography>
-                            <Typography color='black' fontSize='12px'>Yoga enhances physical well-being through improved flexibility and strength, while meditation fosters mental and emotional health by reducing stress, improving concentration, and enhancing sleep. Together, they contribute to overall holistic well-being, promoting physical fitness and mental clarity.</Typography>
+                            <Typography color='white' fontSize='16px' fontWeight='500' marginBottom='2%' style={{fontFamily:'ABeeZee'}}>MENTAL WELL-BEING</Typography>
+                            <Typography color='black' fontSize='14px' marginBottom='3%' style={{fontFamily:'ABeeZee'}}>Find Harmony in Body and Mind</Typography>
+                            <Typography color='black' fontSize='13px' style={{fontFamily:'ABeeZee'}}>Yoga enhances physical well-being through improved flexibility and strength, while meditation fosters mental and emotional health by reducing stress, improving concentration, and enhancing sleep. Together, they contribute to overall holistic well-being, promoting physical fitness and mental clarity.</Typography>
                             <Box marginTop='5%'>
                                 <Box display='flex' justifyContent='start' marginTop='3%' paddingBottom='2%'>
                                     <NavLink to='/wellness-practice'>
@@ -154,7 +155,7 @@ const WellnessPractice = () => {
                     <Box>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                <img src='/images/home/wellness_yoga_1.png' width='100%' />
+                                <img src={Images.wellness_yoga_1} width='100%' />
                             </Paper>
                         </Box>
                     </Box>
@@ -203,7 +204,7 @@ const WellnessPractice = () => {
                     <Box>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
-                                <img src='/images/home/wellness_yoga_2.png' width='100%' />
+                                <img src={Images.wellness_yoga_2} width='100%' />
                             </Paper>
                         </Box>
                     </Box>

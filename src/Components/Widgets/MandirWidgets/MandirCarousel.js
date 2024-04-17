@@ -83,7 +83,7 @@ const MandirCarousel = ({ item }) => {
                                 <Box>
                                     <Grid container justifyContent='space-between' display={{ xs: 'flex', sm: 'flex', md: 'flex', lg: 'flex', xl: 'flex' }}>
                                         <Grid item xs={3.5}>
-                                            <MandirCard name={item[page].name1} place={item[page].place1} content={item[page].content1} btnText={item[page].btnText} img={item[page].img1} navlink={item[page].nav1} />
+                                            <MandirCard name={item[page].name1} place={item[page].place1} content={item[page].content1} btnText={item[page].btnText} img ={item[page].img1} navlink={item[page].nav1} />
                                         </Grid>
                                         <Grid item xs={3.5}>
                                             <MandirCard name={item[page].name2} place={item[page].place2} content={item[page].content2} btnText={item[page].btnText} img={item[page].img2} navlink={item[page].nav2} />
@@ -95,13 +95,13 @@ const MandirCarousel = ({ item }) => {
 
                                     <Grid container justifyContent='space-between' display={{ xs: 'flex', sm: 'flex', md: 'flex', lg: 'flex', xl: 'flex' }}>
                                         <Grid item xs={3.5}>
-                                            <MandirCard name={item[page].name4} place={item[page].place4} content={item[page].content4} btnText={item[page].btnText} img={item[page].img4} navlink={item.nav4} />
+                                            <MandirCard name={item[page].name4} place={item[page].place4} content={item[page].content4} btnText={item[page].btnText} img={item[page].img4} navlink={item[page].nav4} />
                                         </Grid>
                                         <Grid item xs={3.5}>
-                                            <MandirCard name={item[page].name5} place={item[page].place5} content={item[page].content5} btnText={item[page].btnText} img={item[page].img5} navlink={item.nav5} />
+                                            <MandirCard name={item[page].name5} place={item[page].place5} content={item[page].content5} btnText={item[page].btnText} img={item[page].img5} navlink={item[page].nav5} />
                                         </Grid>
                                         <Grid item xs={3.5}>
-                                            <MandirCard name={item[page].name6} place={item[page].place6} content={item[page].content6} btnText={item[page].btnText} img={item[page].img6} navlink={item.nav6} />
+                                            <MandirCard name={item[page].name6} place={item[page].place6} content={item[page].content6} btnText={item[page].btnText} img={item[page].img6} navlink={item[page].nav6} />
                                         </Grid>
                                     </Grid>
                                 </Box>
@@ -113,13 +113,16 @@ const MandirCarousel = ({ item }) => {
                 <MobileStepper variant='dots' steps={maxSteps} position='static' activeStep={page}
                     nextButton={<Button onClick={handleNext}>
                         <IconButton style={{ border: isNext ? '1px solid black' : '1px solid white', color: isNext ? '#f24e1e' : 'white', backgroundColor: isNext ? 'black' : 'transparent' }} onMouseOver={() => setIsNext(true)} onMouseOut={() => setIsNext(false)}>
-                            <ArrowForward />
+                            <ArrowForward sx={{ width: 18, height: 18}}
+                             > </ArrowForward>
                         </IconButton>
                     </Button>}
 
                     backButton={<Button onClick={handlePrevious}>
                         <IconButton style={{ border: isPrevious ? '1px solid black' : '1px solid white', color: isPrevious ? '#f24e1e' : 'white', backgroundColor: isPrevious ? 'black' : 'transparent' }} onMouseOver={() => setIsPrevious(true)} onMouseOut={() => setIsPrevious(false)}>
-                            <ArrowBack />
+                            <ArrowBack sx={{ width: 18, height: 18}}>
+
+                            </ArrowBack>
                         </IconButton>
                     </Button>}
                     style={{ backgroundColor: 'transparent' }}

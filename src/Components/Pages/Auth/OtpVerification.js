@@ -76,7 +76,7 @@ const OtpVerification = () => {
             {/* For lg and xl */}
             <Grid container display={{ xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}>
                 <Grid item md={6} height='100vh'>
-                    <Box height='100%' sx={{ backgroundImage: "url('/images/auth/otp_image.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                    <Box height='100%' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Fotp_image.png?alt=media&token=a6a3127a-fe0f-46fe-9ff0-954d6710087d')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
                         <Box marginLeft='7%' marginRight='7%' border='1px solid transparent'>
                             <Typography color='white' fontSize='32px' fontWeight='bold' marginTop='80%'>
                                 "Embark on a Spiritual Journey: Sign Up for Exclusive Online Prasad and Puja Services!"
@@ -84,7 +84,7 @@ const OtpVerification = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item md={6} sx={{ backgroundImage: "url('/images/auth/login_background.png')", backgroundSize: 'cover' }}>
+                <Grid item md={6} sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Flogin_background.png?alt=media&token=2b23efda-2d55-4126-9c9f-d5f20d0378e4')", backgroundSize: 'cover' }}>
                     <Box display='flex' alignItems='center' marginLeft='5%' marginTop='5%'>
                         <Box sx={{ width: 58, height: 62 }} component="img" alt="Cart" src="/images/logo.png" />
                         <NavLink to='/' style={{ textDecoration: 'none' }}>
@@ -133,7 +133,7 @@ const OtpVerification = () => {
 
             {/* For xs and sm */}
             <Grid container display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>
-                <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('/images/auth/login_background.png')", backgroundSize: 'cover' }}>
+                <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Flogin_background.png?alt=media&token=2b23efda-2d55-4126-9c9f-d5f20d0378e4')", backgroundSize: 'cover' }}>
                     <Box display='flex' alignItems='center' marginLeft='7%' paddingTop='7%'>
                         <Box sx={{ width: 58, height: 62 }} component="img" alt="Cart" src="/images/logo.png" />
                         <NavLink to='/' style={{ textDecoration: 'none' }}>
@@ -184,7 +184,7 @@ const OtpVerification = () => {
 
             {/* For md */}
             <Grid container display={{ xs: 'none', sm: 'none', md: 'block', lg: 'none', xl: 'none' }}>
-                <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('/images/auth/login_background.png')", backgroundSize: 'cover' }}>
+                <Grid item md={12} height='100vh' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Flogin_background.png?alt=media&token=2b23efda-2d55-4126-9c9f-d5f20d0378e4')", backgroundSize: 'cover' }}>
                     <Box display='flex' alignItems='center' marginLeft='7%' paddingTop='7%'>
                         <Box sx={{ width: 58, height: 62 }} component="img" alt="Cart" src="/images/logo.png" />
                         <NavLink to='/' style={{ textDecoration: 'none' }}>

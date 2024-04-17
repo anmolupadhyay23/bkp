@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
+import Images from '../../../../Constants/constant'
 
 const ShopCoupon = () => {
     return (
@@ -10,7 +11,7 @@ const ShopCoupon = () => {
                     <Grid item xs={0} />
                     <Grid item xs={2.8}>
                         <Box marginBottom='5%' marginTop='5%' width='80%'>
-                            <img src='/images/shops/shop_coupon.png' width='100%' />
+                            <img src={Images.shop_coupon} width='100%' />
                         </Box>
                     </Grid>
                     <Grid item xs={4}>

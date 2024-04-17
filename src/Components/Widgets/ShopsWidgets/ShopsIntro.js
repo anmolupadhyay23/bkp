@@ -1,5 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
 import React, { useState } from 'react'
+import Images from '../../../Constants/constant'
 
 const ShopsIntro = () => {
 
@@ -9,9 +10,9 @@ const ShopsIntro = () => {
         <Box paddingTop='100px'>
             <Grid container>
                 <Grid item xs={6}>
-                    <img src='/images/shops/shops_intro.png' width='100%' />
+                    <img src={Images.shops_intro} width='100%' />
                 </Grid>
-                <Grid item xs={6} display='flex' alignItems='center' sx={{ backgroundImage: "url('/images/shops/shops_intro_background.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <Grid item xs={6} display='flex' alignItems='center' sx={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/future-it-c63d3.appspot.com/o/bkp%2Fshops_intro_background.png?alt=media&token=bc28ebfa-40cd-4e91-8c01-4947df1118b3')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <Box marginRight='15%' marginLeft='5%'>
                         {/* For md and large screens */}
                         <Box display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>

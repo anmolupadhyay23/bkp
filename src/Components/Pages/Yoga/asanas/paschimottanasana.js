@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Paschimottanasana = () => {
@@ -18,7 +19,7 @@ const Paschimottanasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/paschimottanasana.png' 
+        <YogaintroImage imageSrc={Images.paschimottanasana1} 
         title='Paschittanasana'
         subtitle1='“Paschimottanasana: Seated Forward Bend, stretches the '
         subtitle2='back of the body.”'
@@ -66,12 +67,12 @@ Paschimottanasana is a seated yoga pose that involves folding forward from the h
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/paschimottanasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.paschimottanasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/paschimottanasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.paschimottanasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

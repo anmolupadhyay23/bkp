@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Airavatesvara = () => {
     return (
@@ -11,7 +12,7 @@ const Airavatesvara = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/south/airavatesvara.png'
+                 image={Images.airavatesvara}
                   name='Airavatesvara Temple'
                   location=':Darasuram, Thanjavur'
                   state=':Tamil Nadu'

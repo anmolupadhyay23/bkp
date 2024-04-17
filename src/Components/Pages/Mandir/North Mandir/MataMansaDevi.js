@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const MansaDevi = () => {
     return (
@@ -11,7 +12,7 @@ const MansaDevi = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/north/mansa_devi.png'
+                 image={Images.matamansadevi}
                   name='Mata Mansa Devi Temple'
                   location=':Panchkula District'
                   state=':Haryana'

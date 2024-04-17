@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Ardhamatsyendrasana = () => {
@@ -19,7 +20,7 @@ const Ardhamatsyendrasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/ardhamatsyendrasana.png' 
+        <YogaintroImage imageSrc={Images.ardhamatsyendrasana1} 
         title='Ardha Matsyendrasana'
         subtitle1='“Ardha Matsyendrasana: Seated twist yoga posture for  '
         subtitle2='spine flexibility and digestion.”'
@@ -67,12 +68,12 @@ Ardha Matsyendrasana, or Half Lord of the Fishes Pose, is a seated yoga posture 
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/ardhamatsyendrasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.ardhamatsyendrasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/ardhamatsyendrasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.ardhamatsyendrasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

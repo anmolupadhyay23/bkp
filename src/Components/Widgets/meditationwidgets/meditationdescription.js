@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import Images from '../../../Constants/constant';
 
 const Meditationdescription = ({ title, info,goal, items }) => {
   return (
@@ -35,7 +36,7 @@ const Meditationdescription = ({ title, info,goal, items }) => {
 
                     <Box display='flex' flexDirection='column' >
                         <Box marginLeft='25%' marginRight='25%' marginBottom='10%' display='flex' justifyContent='center' alignItems='center'>
-                            <img src='/images/meditation/meditationbanner/stress.png' width='50%' />
+                            <img src={Images.stress} width='50%' />
                         </Box>
 
                         <Box display='flex' justifyContent='center' alignItems='center'>
@@ -50,7 +51,7 @@ const Meditationdescription = ({ title, info,goal, items }) => {
 
                     <Box display='flex' flexDirection='column'>
                         <Box marginLeft='25%' marginRight='25%'  marginBottom='10%' display='flex' justifyContent='center' alignItems='center'>
-                            <img src='/images/meditation/meditationbanner/mentalhealth.png' width='50%' />
+                            <img src={Images.mentalhealth} width='50%' />
                         </Box>
 
                         <Box display='flex' justifyContent='center' alignItems='center'>
@@ -61,7 +62,7 @@ const Meditationdescription = ({ title, info,goal, items }) => {
                     </Box>
                     <Box display='flex' flexDirection='column'>
                         <Box marginLeft='25%' marginRight='25%' marginBottom='10%' display='flex' justifyContent='center' alignItems='center'>
-                            <img src='/images/meditation/meditationbanner/focus.png' width='50%' />
+                            <img src={Images.focus} width='50%' />
                         </Box>
                         <Box display='flex' justifyContent='center' alignItems='center'>
                         <Typography display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}}  fontSize='12px' color='white'>Focus & Concentration</Typography>
@@ -72,7 +73,7 @@ const Meditationdescription = ({ title, info,goal, items }) => {
                     
                     <Box display='flex' flexDirection='column'>
                         <Box marginLeft='25%' marginRight='25%' marginBottom='10%' display='flex' justifyContent='center' alignItems='center'>
-                            <img src='/images/meditation/meditationbanner/sleep.png' width='50%' />
+                            <img src={Images.sleep} width='50%' />
                         </Box>
 
                         <Box display='flex' justifyContent='center' alignItems='center'> 
@@ -84,7 +85,7 @@ const Meditationdescription = ({ title, info,goal, items }) => {
 
                     <Box display='flex' flexDirection='column'>
                         <Box marginLeft='25%' marginRight='25%' marginBottom='10%' display='flex' justifyContent='center' alignItems='center'>
-                            <img src='/images/meditation/meditationbanner/awareness.png' width='50%' />
+                            <img src={Images.awareness} width='50%' />
                         </Box>
                         <Box display='flex' justifyContent='center' alignItems='center'>
                         <Typography display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}}  fontSize='12px' color='white'>Increased self-awareness</Typography>
@@ -95,7 +96,7 @@ const Meditationdescription = ({ title, info,goal, items }) => {
 
                     <Box display='flex' flexDirection='column'>
                         <Box marginLeft='25%' marginRight='25%' marginBottom='10%' display='flex' justifyContent='center' alignItems='center'>
-                            <img src='/images/meditation/meditationbanner/physicalhealth.png' width='50%' />
+                            <img src={Images.physicalhealth} width='50%' />
                         </Box>
                         <Box display='flex' justifyContent='center' alignItems='center'>
                         <Typography display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}}  fontSize='12px' color='white'>Physical Health</Typography>

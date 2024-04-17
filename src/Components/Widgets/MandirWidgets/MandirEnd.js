@@ -13,16 +13,16 @@ const MandirEnd = ({curve}) => {
             </div> : null}
 
 
-            <Grid container paddingTop='5%'>
+            <Grid container paddingTop='15%'>
                 <Grid item xs={12}>
                     <Box display='flex' justifyContent='center' alignItems='center'>
                         <Paper variant='outlined' style={{ background: 'transparent', marginRight: '1.5%', border: 'none' }}>
-                            <img src='/images/mandir/mandir_icon.png' width='13px' height='16px' />
+                            <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/mvuhah7a5i2rvg9vrhxj' width='13px' height='16px' />
                         </Paper>
                         <Typography color='black' fontSize='24px' marginTop='1%' display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>Discover Sacred Sites Beyond Borders</Typography>
                         <Typography color='black' fontSize='12px' marginTop='1%' display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }}>Discover Sacred Sites Beyond Borders</Typography>
                         <Paper variant='outlined' style={{ background: 'transparent', marginLeft: '1.5%', border: 'none' }}>
-                            <img src='/images/mandir/mandir_icon.png' width='13px' height='16px' />
+                            <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/mvuhah7a5i2rvg9vrhxj' width='13px' height='16px' />
                         </Paper>
                     </Box>
                 </Grid>
@@ -57,7 +57,7 @@ const ChangeMandir = () => {
                         <NavLink to='/east-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/east_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/te27amewxmbbmergo2jt' width='100%' />
                                     <Typography style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>East India</Typography>
                                 </Paper>
                             </Button>
@@ -67,7 +67,7 @@ const ChangeMandir = () => {
                         <NavLink to='/west-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/west_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/bhipmm882lmswnubmwhq' width='100%' />
                                     <Typography style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>West India</Typography>
                                 </Paper>
                             </Button>
@@ -77,7 +77,7 @@ const ChangeMandir = () => {
                         <NavLink to='/north-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/north_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/qfowtl6e5mbcebs79mcm' width='100%' />
                                     <Typography style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>North India</Typography>
                                 </Paper>
                             </Button>
@@ -87,7 +87,7 @@ const ChangeMandir = () => {
                         <NavLink to='/south-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/south_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/gvoxflsxsrg6hwzkytsm' width='100%' />
                                     <Typography style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>South India</Typography>
                                 </Paper>
                             </Button>
@@ -100,7 +100,7 @@ const ChangeMandir = () => {
                         <NavLink to='/east-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/east_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/te27amewxmbbmergo2jt' width='100%' />
                                     <Typography display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }} style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>East India</Typography>
                                     <Typography display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }} style={{ width: '100%', position: 'absolute', fontSize: '20px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>East India</Typography>
                                 </Paper>
@@ -109,7 +109,7 @@ const ChangeMandir = () => {
                         <NavLink to='/west-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/west_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/bhipmm882lmswnubmwhq' width='100%' />
                                     <Typography display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }} style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>West India</Typography>
                                     <Typography display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }} style={{ width: '100%', position: 'absolute', fontSize: '20px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>West India</Typography>
                                 </Paper>
@@ -120,7 +120,7 @@ const ChangeMandir = () => {
                         <NavLink to='/north-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/north_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/qfowtl6e5mbcebs79mcm' width='100%' />
                                     <Typography display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }} style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>North India</Typography>
                                     <Typography display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }} style={{ width: '100%', position: 'absolute', fontSize: '20px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>North India</Typography>
                                 </Paper>
@@ -129,7 +129,7 @@ const ChangeMandir = () => {
                         <NavLink to='/south-mandir'>
                             <Button style={{ textTransform: 'none' }}>
                                 <Paper variant='outlined' style={{ background: 'transparent', display: 'flex', flexDirection: 'column', borderRadius: '20px', position: 'relative' }}>
-                                    <img src='/images/mandir/south_india.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/mandir/gvoxflsxsrg6hwzkytsm' width='100%' />
                                     <Typography display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }} style={{ width: '100%', position: 'absolute', fontSize: '30px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>South India</Typography>
                                     <Typography display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }} style={{ width: '100%', position: 'absolute', fontSize: '20px', fontWeight: '500', color: 'white', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', }}>South India</Typography>
                                 </Paper>

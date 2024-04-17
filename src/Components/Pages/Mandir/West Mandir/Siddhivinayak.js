@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const SiddhiVinayak = () => {
     return (
@@ -11,7 +12,7 @@ const SiddhiVinayak = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/west/siddhivinayak.png'
+                 image={Images.siddhivinayak}
                   name='Shree Siddhivinayak Temple'
                   location=':Prabhadevi, Mumbai'
                   state=':Maharashtra'

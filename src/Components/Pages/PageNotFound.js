@@ -17,7 +17,7 @@ const PageNotFound = () => {
               <Box display='flex' justifyContent='space-between'>
                 <Typography fontSize='20px' color='black' >Working on something amazing...</Typography>
                 <Typography fontSize='20px' color='black' fontWeight='500' >
-                  <CountUp start={0} end={69} duration={10000} />%
+                  <CountUp start={0} end={70} duration={10000} />%
                 </Typography>
               </Box>
               <LinearProgress style={{ backgroundColor: 'white' }} sx={{ '& .MuiLinearProgress-bar': { backgroundColor: 'green' } }}></LinearProgress>
@@ -34,7 +34,7 @@ const PageNotFound = () => {
               <Box display='flex' justifyContent='space-between'>
                 <Typography fontSize='12px' color='black' >Working on something amazing...</Typography>
                 <Typography fontSize='12px' color='black' fontWeight='500' >
-                  <CountUp start={0} end={69} duration={10000} />%
+                  <CountUp start={0} end={70} duration={10000} />%
                 </Typography>
               </Box>
               <LinearProgress style={{ backgroundColor: 'white' }} sx={{ '& .MuiLinearProgress-bar': { backgroundColor: 'green' } }}></LinearProgress>

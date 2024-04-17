@@ -3,6 +3,7 @@ import React from 'react'
 import NewNavbar from '../../../Layout/NewNavbar'
 import YogaintroImage from '../../../Widgets/yogawidgets/yogaintroimage'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
+import Images from '../../../../Constants/constant'
 
 
 const Padahasthasana = () => {
@@ -18,7 +19,7 @@ const Padahasthasana = () => {
   return (
     <Box>
         <NewNavbar/>
-        <YogaintroImage imageSrc='images/yoga/asanasintroimages/padahasthasana.png' 
+        <YogaintroImage imageSrc={Images.padahasthasana1}
         title='Pada Hasthasana'
         subtitle1='"Pada Hasthasana, or Hand to Foot Pose, stretches the '
         subtitle2='back of the body, enhances flexibility, and improves balance."'
@@ -65,12 +66,12 @@ Pada Hasthasana, or Hand to Foot Pose, is a yoga posture that involves bending f
 
          {/*Benefit Image*/}
         <Box sx={{display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }}}>
-        <img  src='images/yoga/asanasbenefits/padahasthasanabenefits.png' width='100%' height='50%'></img>
+        <img  src={Images.padahasthasanabenefits} width='100%' height='50%'></img>
         </Box>
           
 
           <Box sx={{display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none', xl: 'none' }}}>
-          <img src='images/yoga/asanasbenefits/padahasthasanabenefits.png' width='350h' height='70%'></img>
+          <img src={Images.padahasthasanabenefits} width='350h' height='70%'></img>
           </Box>
         
         

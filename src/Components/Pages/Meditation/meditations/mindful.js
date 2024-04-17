@@ -4,6 +4,7 @@ import MeditationintroImage from '../../../Widgets/meditationwidgets/meditationi
 import NewNavbar from '../../../Layout/NewNavbar'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import Meditationdescription from '../../../Widgets/meditationwidgets/meditationdescription'
+import Images from '../../../../Constants/constant'
 
 const Mindufulnes = () => {
    const items=["Find a comfortable and quiet space where you won't be disturbed. Sit in a comfortable position, either cross-legged on the floor or on a chair with your feet flat on the ground and your hands resting on your lap.",
@@ -25,7 +26,7 @@ const Mindufulnes = () => {
             { display: { xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none' }, textWidth: '45%', titleFontSize: '12px', subtitleFontSize: '7px' }
         ]}
         title='Mindfulness Meditation'
-        imageSrc='images/meditation/meditationintroimages/mindfulness.png'
+        imageSrc={Images.mindfulness}
 
         ></MeditationintroImage>
 

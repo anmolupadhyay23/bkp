@@ -1,6 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Images from '../../../Constants/constant'
 
 const WellnessProgram = () => {
     return (
@@ -11,14 +12,14 @@ const WellnessProgram = () => {
                 </Typography>
             </Box>
             <Box position='relative'>
-                <img src='/images/wellness/wellness_ring.png' width='100%' style={{ marginTop: '10%' }} />
+                <img src={Images.wellness_ring} width='100%' style={{ marginTop: '10%' }} />
                 <Grid container position='absolute' top='5%'>
                     <Grid item xs={1} />
                     <Grid item xs={4.5}>
                         <NavLink to='/yogamain' style={{ textDecoration: 'none' }}>
                             <Box display='flex' flexDirection='column' position='relative' sx={{ cursor: 'pointer' }}>
-                                <img src='/images/wellness/wellness_yoga.png' width='100%' />
-                                <img src='/images/wellness/wellness_yoga_underline.png' width='100%' />
+                                <img src={Images.wellness_yoga} width='100%' />
+                                <img src={Images.wellness_yoga_underline} width='100%' />
 
                                 <Box position='absolute' bottom='7%' left='10%' display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}}>
                                     <Typography fontSize='32px' fontWeight='500' color='black'>
@@ -38,8 +39,8 @@ const WellnessProgram = () => {
 
                         <NavLink to='/meditation' style={{ textDecoration: 'none' }}>
                             <Box display='flex' flexDirection='column' position='relative'>
-                                <img src='/images/wellness/wellness_meditation.png' width='100%' />
-                                <img src='/images/wellness/wellness_meditation_underline.png' width='100%' />
+                                <img src={Images.wellness_meditation} width='100%' />
+                                <img src={Images.wellness_meditation_underline} width='100%' />
                                 <Box position='absolute' bottom='7%' right='10%' display={{xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block'}}>
                                     <Typography fontSize='32px' fontWeight='500' color='black'>
                                         Meditation

@@ -3,6 +3,7 @@ import { Avatar, Box, Button, IconButton, MobileStepper, Paper, Typography } fro
 import React, { useState } from 'react'
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import Images from '../../../Constants/constant';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -58,21 +59,21 @@ const Quotes = () => {
                 { /* For larger screens than sm */}
                 <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }} justifyContent='center' marginLeft='30%' marginRight='30%'>
                     <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginRight: '1.5%', border: 'none' }}>
-                        <img src='/images/home/quotes_sign.png' width='13px' height='16px' />
+                        <img src={Images.quotes_sign} width='13px' height='16px' />
                     </Paper>
-                    <Typography color='black' fontSize='24px' marginTop='1%'>Quotes</Typography>
+                    <Typography color='white' fontSize='24px' marginTop='1%'>Quotes</Typography>
                     <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginLeft: '1.5%', border: 'none' }}>
-                        <img src='/images/home/quotes_sign.png' width='13px' height='16px' />
+                        <img src={Images.quotes_sign} width='13px' height='16px' />
                     </Paper>
                 </Box>
                 { /* For sm and smaller screens */}
                 <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='30%' marginRight='30%'>
                     <Paper variant='outlined' style={{ background: 'transparent', marginTop: '0.8%', marginRight: '1.5%', border: 'none' }}>
-                        <img src='/images/home/quotes_sign.png' width='11px' height='13px' />
+                        <img src={Images.quotes_sign} width='11px' height='13px' />
                     </Paper>
-                    <Typography color='black' fontSize='18px' marginTop='1%'>Quotes</Typography>
+                    <Typography color='white' fontSize='18px' marginTop='1%'>Quotes</Typography>
                     <Paper variant='outlined' style={{ background: 'transparent', marginTop: '0.8%', marginLeft: '1.5%', border: 'none' }}>
-                        <img src='/images/home/quotes_sign.png' width='11px' height='13px' />
+                        <img src={Images.quotes_sign} width='11px' height='13px' />
                     </Paper>
                 </Box>
 
@@ -100,7 +101,7 @@ const Quotes = () => {
                                         </Typography>
                                     </Box>
                                     <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='10%' marginRight='10%'>
-                                        <Typography color='white' fontSize='15px' marginTop='2.5%' fontWeight='500' textAlign='center'>
+                                        <Typography color='white' fontSize='13px' marginTop='2.5%' fontWeight='500' textAlign='center' style={{fontFamily:'ABeeZee'}}>
                                             {step.quoteText}
                                         </Typography>
                                     </Box>
@@ -130,7 +131,7 @@ const Quotes = () => {
                                     </Box>
                                     <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} alignItems='center' justifyContent='right' marginLeft='20%' marginRight='10%' marginBottom='3%' marginTop='3%'>
                                         <Avatar sx={{ backgroundColor: 'white', width: '5px', height: '5px', marginRight: '2%' }}></Avatar>
-                                        <Typography color='white' fontSize='12px' textAlign='right' fontWeight='350' >
+                                        <Typography color='white' fontSize='14px' textAlign='right' fontWeight='350' style={{fontFamily:'ABeeZee'}} >
                                             {step.quoteBy}
                                         </Typography>
                                     </Box>
@@ -142,13 +143,13 @@ const Quotes = () => {
 
                 <MobileStepper variant='none' steps={maxSteps} position='static' activeStep={activeStep}
                     nextButton={<Button onClick={handleNext}>
-                        <IconButton style={{ border: isNext ? '1px solid black' : '1px solid white', color: isNext ? '#f24e1e' : 'white', backgroundColor: isNext ? 'black' : 'transparent' }} onMouseOver={() => setIsNext(true)} onMouseOut={() => setIsNext(false)}>
+                        <IconButton style={{ width:30, height:30 , border: isNext ? '1px solid black' : '1px solid white', color: isNext ? '#f24e1e' : 'white', backgroundColor: isNext ? 'black' : 'transparent' }} onMouseOver={() => setIsNext(true)} onMouseOut={() => setIsNext(false)}>
                             <ArrowForward />
                         </IconButton>
                     </Button>}
                     backButton={<Button onClick={handlePrev}>
-                        <IconButton style={{ border: isPrevious ? '1px solid black' : '1px solid white', color: isPrevious ? '#f24e1e' : 'white', backgroundColor: isPrevious ? 'black' : 'transparent' }} onMouseOver={() => setIsPrevious(true)} onMouseOut={() => setIsPrevious(false)}>
-                            <ArrowBack />
+                        <IconButton style={{ width:30, height:30 ,border: isPrevious ? '1px solid black' : '1px solid white', color: isPrevious ? '#f24e1e' : 'white', backgroundColor: isPrevious ? 'black' : 'transparent' }} onMouseOver={() => setIsPrevious(true)} onMouseOut={() => setIsPrevious(false)}>
+                            <ArrowBack/>
                         </IconButton>
                     </Button>}
                     style={{ backgroundColor: 'transparent' }}

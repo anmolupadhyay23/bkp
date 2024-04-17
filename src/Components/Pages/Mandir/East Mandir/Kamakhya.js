@@ -4,6 +4,7 @@ import MandirImage from '../../../Widgets/MandirWidgets/MandirDetails/MandirImag
 import MandirEnd from '../../../Widgets/MandirWidgets/MandirEnd'
 import Footer from '../../../Widgets/HomeWidgets/Footer'
 import NewNavbar from '../../../Layout/NewNavbar'
+import Images from '../../../../Constants/constant'
 
 const Kamakhya = () => {
     return (
@@ -11,7 +12,7 @@ const Kamakhya = () => {
             <NewNavbar />
             <Box marginLeft='5%' marginRight='5%'>
                 <MandirImage
-                 image='/images/mandir/east/kamakhya.png'
+                 image={Images.kamakhya}
                   name='Kamakhya Temple'
                   location=':Nilachal Hills, Guwahati'
                   state=':Assam'

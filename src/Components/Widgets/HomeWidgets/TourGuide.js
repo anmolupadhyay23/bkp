@@ -2,6 +2,8 @@ import { ArrowForward } from '@mui/icons-material'
 import { Box, Button, Grid, Paper, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import Images from '../../../Constants/constant'
+
 
 const TourGuide = () => {
 
@@ -11,25 +13,25 @@ const TourGuide = () => {
     const [isBtn, setIsBtn] = useState(false)
 
     return (
-        <Box sx={{ backgroundImage: "url('/images/home/tour_background.png')", backgroundSize: 'contain', backgroundPosition: 'center' }}>
+        <Box sx={{ backgroundImage: "url('https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/home/bn07fn0lgjlhzymvct8o')", backgroundSize: 'contain', backgroundPosition: 'center' }}>
             { /* For larger screens than sm */}
             <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }} justifyContent='center' marginLeft='30%' marginRight='30%' paddingTop='2%'>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginRight: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='13px' height='16px' />
+                    <img src={Images.services_sign} width='13px' height='16px' />
                 </Paper>
                 <Typography color='white' fontSize='24px' marginTop='1%'>PLAN YOUR TRIP</Typography>
                 <Paper variant='outlined' style={{ background: 'transparent', marginTop: '1.4%', marginLeft: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='13px' height='16px' />
+                    <img src={Images.services_sign} width='13px' height='16px' />
                 </Paper>
             </Box>
             { /* For sm and smaller screens */}
-            <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='25%' marginRight='25%' paddingTop='5%'>
-                <Paper variant='outlined' style={{ background: 'transparent', marginTop: '0.8%', marginRight: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='11px' height='13px' />
+            <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' alignItems='center' marginLeft='25%' marginRight='25%' paddingTop='5%'>
+                <Paper variant='outlined' style={{ background: 'transparent', marginRight: '3%', border: 'none' }}>
+                    <img src={Images.services_sign} width='11px' height='13px' />
                 </Paper>
-                <Typography color='white' fontSize='18px' marginTop='1%'>PLAN YOUR TRIP</Typography>
-                <Paper variant='outlined' style={{ background: 'transparent', marginTop: '0.8%', marginLeft: '1.5%', border: 'none' }}>
-                    <img src='/images/home/services_sign.png' width='11px' height='13px' />
+                <Typography color='rgba(255,255,255,0.6)' fontSize='13px' marginTop='1%'>PLAN YOUR TRIP</Typography>
+                <Paper variant='outlined' style={{ background: 'transparent', marginLeft: '3%', border: 'none' }}>
+                    <img src={Images.services_sign} width='11px' height='13px' />
                 </Paper>
             </Box>
 
@@ -39,7 +41,7 @@ const TourGuide = () => {
             </Box>
             { /* For sm and smaller screens */}
             <Box display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }} justifyContent='center' marginLeft='30%' marginRight='30%'>
-                <Typography color='#f8f7f4' fontSize='15px' marginTop='2.5%' fontWeight='500' textAlign='center'>Spiritual Tour Guide</Typography>
+                <Typography color='#f8f7f4' fontSize='16px' marginTop='2.5%' fontWeight='500' textAlign='center' style={{fontFamily:'ABeeZee'}}>Spiritual Tour Guide</Typography>
             </Box>
 
             { /* For larger screens than sm */}
@@ -54,7 +56,7 @@ const TourGuide = () => {
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
                                 <NavLink to='/tour/kedarnath'>
-                                    <img src='/images/home/tour_kedarnath.png' style={{ filter: isKedarnath }} width='100%' onMouseOver={() => setIsKedarnath('brightness(0.25)')} onMouseOut={() => setIsKedarnath('brightness(1)')} />
+                                    <img src={Images.tour_kedarnath} style={{ filter: isKedarnath }} width='100%' onMouseOver={() => setIsKedarnath('brightness(0.25)')} onMouseOut={() => setIsKedarnath('brightness(1)')} />
                                 </NavLink>
                             </Paper>
                         </Box>
@@ -68,7 +70,7 @@ const TourGuide = () => {
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
                                 <NavLink to='/tour/vrindavan'>
-                                    <img src='/images/home/tour_vrindavan.png' style={{ filter: isVrindavan }} width='100%' onMouseOver={() => setIsVrindavan('brightness(0.25)')} onMouseOut={() => setIsVrindavan('brightness(1)')} />
+                                    <img src={Images.tour_vrindavan} style={{ filter: isVrindavan }} width='100%' onMouseOver={() => setIsVrindavan('brightness(0.25)')} onMouseOut={() => setIsVrindavan('brightness(1)')} />
                                 </NavLink>
                             </Paper>
                         </Box>
@@ -82,7 +84,7 @@ const TourGuide = () => {
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
                                 <NavLink to='/tour/somnath'>
-                                    <img src='/images/home/tour_somnath.png' style={{ filter: isSomnath }} width='100%' onMouseOver={() => setIsSomnath('brightness(0.25)')} onMouseOut={() => setIsSomnath('brightness(1)')} />
+                                    <img src={Images.tour_somnath} style={{ filter: isSomnath }} width='100%' onMouseOver={() => setIsSomnath('brightness(0.25)')} onMouseOut={() => setIsSomnath('brightness(1)')} />
                                 </NavLink>
                             </Paper>
                         </Box>
@@ -94,44 +96,47 @@ const TourGuide = () => {
 
                 { /* For sm and smaller screens */}
                 <Grid item md={3} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none' }} marginRight='5%' marginLeft='5%' marginBottom='8%' marginTop='5%' >
-                    <Box>
+                    <Box position='relative'>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
                                 <NavLink to='/tour/kedarnath'>
-                                    <img src='/images/home/tour_kedarnath.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/home/ivcpg6ypuow78trc0mcl' width='100%' />
                                 </NavLink>
                             </Paper>
                         </Box>
-                        <Box display='flex' justifyContent='center' >
-                            <Typography color='white' fontSize='25px' marginTop='2.5%' textAlign='center'>Kedarnath</Typography>
+                        <Box position='absolute' left='0%' top='10%' sx={{backgroundColor:'rgba(255,255,255,0.4)', borderTopRightRadius: '12px', borderBottomRightRadius:'12px', paddingRight:'15px', paddingLeft:'7px'}}>
+                            <Typography fontSize='16px' color='white'>Kedarnath</Typography>
                         </Box>
+                        
                     </Box>
                 </Grid>
                 <Grid item md={3} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none' }} marginRight='5%' marginLeft='5%' marginBottom='8%' >
-                    <Box>
+                    <Box position='relative'>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
                                 <NavLink to='/tour/vrindavan'>
-                                    <img src='/images/home/tour_vrindavan.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/home/yznrruwivmpnnmjcqfni' width='100%' />
                                 </NavLink>
                             </Paper>
                         </Box>
-                        <Box display='flex' justifyContent='center' >
-                            <Typography color='white' fontSize='25px' marginTop='2.5%' textAlign='center'>Vrindavan</Typography>
+                        <Box position='absolute' right='0%' top='10%' sx={{backgroundColor:'rgba(255,255,255,0.4)', borderTopLeftRadius: '12px', borderBottomLeftRadius:'12px', paddingLeft:'15px', paddingRight:'7px'}}>
+                            <Typography fontSize='16px' color='white'>Vrindavan</Typography>
                         </Box>
+                        
                     </Box>
                 </Grid>
                 <Grid item md={3} display={{ xs: 'block', sm: 'block', md: 'none', lg: 'none' }} marginRight='5%' marginLeft='5%' marginBottom='8%' >
-                    <Box>
+                    <Box position='relative'>
                         <Box>
                             <Paper variant='outlined' style={{ background: 'transparent', border: 'none' }}>
                                 <NavLink to='/tour/kedarnath'>
-                                    <img src='/images/home/tour_somnath.png' width='100%' />
+                                    <img src='https://res.cloudinary.com/dmfhdyvji/image/upload/f_auto,q_auto/v1/bkp/images/home/rdvtlr8wcdogb6dhnpx5' width='100%' />
                                 </NavLink>
                             </Paper>
                         </Box>
-                        <Box display='flex' justifyContent='center' >
-                            <Typography color='white' fontSize='25px' marginTop='2.5%' textAlign='center'>Som Nath</Typography>
+                        
+                        <Box position='absolute' left='0%' top='10%' sx={{backgroundColor:'rgba(255,255,255,0.4)', borderTopRightRadius: '12px', borderBottomRightRadius:'12px', paddingRight:'15px', paddingLeft:'7px'}}>
+                            <Typography fontSize='16px' color='white'>Somnath</Typography>
                         </Box>
                     </Box>
                 </Grid>

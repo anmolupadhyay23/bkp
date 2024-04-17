@@ -9,7 +9,7 @@ const MeditationintroImage = ({ imageSrc, title, styles }) => {
                     <img src={imageSrc} width='100%'/>
                     <Box position='absolute' top='36%' left='7%' width={style.textWidth}>
                         <Box>
-                            <Typography fontSize={style.titleFontSize} fontWeight='bold' color='white'>{title}</Typography>
+                            <Typography fontSize={style.titleFontSize} fontWeight='bold' color='white' fontFamily='TimesNewRoman'>{title}</Typography>
                             <img src='images/meditation/meditationintrotext.png' width='40%' height='50%'></img>
                         </Box>
                     </Box>
