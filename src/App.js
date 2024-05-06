@@ -80,6 +80,7 @@ function App() {
 
         {/* Main */}
         <Route path='/' element={<HomePage />} />
+        {/* <Route path='homepage-ajay' element={<Ajay/>}></Route> */}
 
         {/* Auth routes */}
         <Route path='/login' element={<Login />} />

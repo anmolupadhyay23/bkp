@@ -137,6 +137,7 @@ const NewNavbar = () => {
                 </Grid>
                 <Grid item md={1}>
                     <Box display='flex' height='100%' justifyContent='start' alignItems='center'>
+                        
                         <NavLink to='/cart'>
                             <IconButton style={{ marginRight: '5%' }}>
                                 <Box sx={{ width: 30, height: 30 }} component="img" alt="Cart" src="/images/icons/cart.png" />
