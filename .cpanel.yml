@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/rvltutmy/public_html/
+    - export DEPLOYPATH=/home2/rvltutmy/bhagwankaprasad.com/
     - /bin/cp * $DEPLOYPATH
